@@ -1,17 +1,316 @@
 ---
-
+import Button from "../components/Button.astro";
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Nélia Figuerola</title>
+  </head>
+  <body>
+    <Nav />
+    <header>
+      <img
+        class="top"
+        src="/public/assets/top-effect.svg"
+        alt=""
+        width="111"
+        height="97"
+      />
+      <section class="hero">
+        <div class="left-side">
+          <img
+            src="/public/assets/nelia-avatar.svg"
+            alt=""
+            width="350"
+            height="390"
+          />
+          <Button>Voir mon autre profil</Button>
+        </div>
+
+        <div class="right-side">
+          <h1>Salut, moi c’est<br />Nélia !</h1>
+          <h2>Je conçois des interfaces claires, accessibles et sobres.</h2>
+          <p>(Ici, vous pouvez apprendre à me connaitre autrement.)</p>
+        </div>
+      </section>
+      <img
+        class="bottom"
+        src="/public/assets/bottom-effect.svg"
+        alt=""
+        width="91"
+        height="87"
+      />
+    </header>
+
+    <section class="welcome">
+      <div class="welcome__inner">
+        <h2>Bienvenue sur mon site</h2>
+        <p>
+          Ici, vous découvrirez mon profil, mais aussi ma personnalité, car ce
+          que j’aime faire, c’est travailler avec ceux qui partagent ma vision
+          du travail.
+        </p>
+        <p>
+          J’adore le digital, et j’ai plein de choses à vous présenter. De ma
+          veille et mes inspirations, jusqu’aux projets concrets et aboutis.
+        </p>
+        <div class="welcome__assets">
+          <a href="#">Découvrir mes projets</a>
+          <img src="/public/assets/welcome.svg" alt="" width="78" height="68" />
+        </div>
+      </div>
+    </section>
+    <main>
+      <section class="inspi">
+        <div class="inspi__assets">
+          <h2>Veille et inspirations</h2>
+          <img src="/public/assets/heart.svg" alt="" />
+        </div>
+        <div class="inspi__inner">
+          <div class="speakers">
+            <h3>Personnalités & Speakers</h3>
+            <p>
+              Professionnels, amateurs ou artistes, j’aime ouvrir ma veille à
+              tous les horizons pour en apprendre toujours, même à petite
+              échelle.
+            </p>
+          </div>
+          <div class="design">
+            <h3>Typographies & Design</h3>
+            <p>
+              Je préfère les typos et les designs accessibles. Mais voir des
+              designs et typos souvent plus beaux que utiles, me permet de
+              garder une inspiration originale.
+            </p>
+          </div>
+          <div class="veille">
+            <h3>Veille</h3>
+            <p>
+              J’ai mis du temps à adapter un système de veille efficace. Flux
+              RSS, influenceurs, boards. Aujourd’hui, j’ai préféré tout réunir
+              en seul endroit, mon site.
+            </p>
+          </div>
+        </div>
+        <a href="#">Voir le board</a>
+      </section>
+      <section class="contact">
+        <h2>Me contacter</h2>
+        <p>
+          Comme vous pouvez le voir sur mon site, j’ai mis en place un statut
+          indiquant si je suis en poste, ou en recherche d’emploi. Ça serait
+          bête de se louper, alors <b>restons en contact</b> !
+        </p>
+        <div class="contact__assets">
+          <a href="#">Contact</a>
+          <img
+            src="/public/assets/contact.svg"
+            alt="Contact"
+            width="106"
+            height="36"
+          />
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </body>
 </html>
+
+<style>
+  body {
+    background: var(--white, #f5f4ed);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 0px 30px 0px;
+    align-items: stretch;
+    gap: 70px;
+  }
+
+  .hero {
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  header {
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0px 240px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  header .top {
+    align-self: flex-start;
+  }
+
+  header .bottom {
+    align-self: flex-end;
+  }
+  h1 {
+    color: var(--brown, #733635);
+    font-family: Monotalic;
+    font-size: 55px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  h2 {
+    color: var(--brown, #733635);
+    font-family: "ABC Favorit Mono Edu";
+    font-size: 44px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  h3 {
+    color: var(--brown, #733635);
+    font-family: "ABC Favorit Mono Edu";
+    font-size: 35px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  header p {
+    color: var(--brown, #733635);
+    font-family: "Fibra One";
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  p {
+    color: var(--brown, #733635);
+    font-family: "Fibra One";
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+  }
+
+  .left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  main {
+    display: flex;
+    padding: 0px 120px;
+    width: fit-content;
+    margin: 0 auto;
+    flex-direction: column;
+    align-self: stretch;
+    gap: 80px;
+  }
+
+  *a {
+    display: flex;
+    padding: 6px 15px;
+    text-decoration: none;
+    color: var(--brown, #733635);
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    border: 1px solid var(--brown, #733635);
+    background: var(--beige, #ececdc);
+    width: fit-content;
+    height: fit-content;
+    font-family: "Fibra One";
+    font-size: 20px;
+  }
+  .welcome {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: var(--beige, #ececdc);
+  }
+  .welcome__inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    padding: 60px 240px;
+    box-sizing: border-box;
+  }
+  .welcome__assets {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+  }
+
+  .inspi {
+    display: flex;
+    padding: 60px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    align-self: stretch;
+  }
+
+  .inspi__assets {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-self: stretch;
+  }
+
+  .inspi__inner {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    align-self: stretch;
+  }
+  .speakers,
+  .design,
+  .veille {
+    display: flex;
+    flex-direction: column;
+    background-color: #ececdc;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: flex-start;
+    align-self: start;
+    border-radius: 10px;
+  }
+
+  .contact {
+    display: flex;
+    padding: 60px 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+    background-color: var(--beige, #ececdc);
+    border-radius: 10px;
+  }
+
+  .contact__assets {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+  }
+</style>

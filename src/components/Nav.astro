@@ -1,0 +1,52 @@
+---
+
+---
+
+<nav>
+  <a href="/">Accueil</a>
+  <a href="/a-propos/">À propos</a>
+  <a href="/mes-projets">Mes projets</a>
+  <a href="/inspirations">Inspirations</a>
+  <a class="contact" href="/contact/">Contact</a>
+</nav>
+
+<style>
+  nav {
+    border-radius: 20px;
+    background: var(--beige, #ececdc);
+    display: flex;
+    width: fit-content;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    margin: 0 auto;
+    gap: 60px;
+    list-style: none;
+    position: sticky;
+    top: 20px;
+    z-index: 100;
+    a {
+      color: var(--black, #000);
+      text-decoration: none;
+      font-family: "Fibra One";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .contact {
+      display: flex;
+      height: 40px;
+      padding: 6px 15px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 8px;
+      border: 2px solid var(--beige, #ececdc);
+      background: var(--black, #351e1c);
+      color: white;
+    }
+  }
+</style>

@@ -1,0 +1,83 @@
+---
+const platform = "github";
+const username = "withastro";
+---
+
+<footer>
+  <div class="plan">
+    <h3>Plan du site</h3>
+    <ul>
+      <li><a href="/">Accueil</a></li>
+      <li><a href="/a-propos/">À propos</a></li>
+      <li><a href="/mes-projets">Mes projets</a></li>
+      <li><a href="/inspirations">Inspirations</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
+  </div>
+  <div class="contact">
+    <h3>Contact</h3>
+    <ul>
+      <li><a href="tel:+33623834084">+33 6 23 83 40 84</a></li>
+      <li><a href="mailto:nelia@tuta.io">nelia@tuta.io</a></li>
+      <li>
+        <a href="https://www.linkedin.com/in/nelia-figuerola/"> LinkedIn </a>
+      </li>
+      <li><a href="https://github.com/deliass"> GitHub </a></li>
+      <li><a href="https://www.instagram.com/dalios.web/">Instagram</a></li>
+    </ul>
+  </div>
+  <div class="mentions">
+    <h3>Mentions</h3>
+    <p>
+      <a href="/mentions-legales">Mentions légales</a>
+    </p>
+  </div>
+</footer>
+
+<style>
+  footer {
+    display: grid;
+    padding: 60px 120px;
+    row-gap: 40px;
+    column-gap: 80px;
+    align-self: stretch;
+    grid-template-rows: repeat(1, fit-content(100%));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 30px;
+    background: var(--beige, #ececdc);
+  }
+
+  h3 {
+    color: var(--brown, #733635);
+    font-family: "ABC Favorit Mono Edu";
+    font-size: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  a {
+    color: var(--black, #000);
+    font-family: "Fibra One";
+    font-size: 20px;
+    font-weight: semi-bold;
+    text-decoration: none;
+  }
+
+  .plan,
+  .contact,
+  .mentions {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .plan ul,
+  .contact ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    list-style-type: none;
+  }
+</style>
