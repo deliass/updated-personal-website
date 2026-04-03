@@ -1,0 +1,112 @@
+---
+import Button from "./Button.astro";
+---
+
+<div class="burger-menu">
+  <button
+    class="burger-toggle"
+    aria-label="Ouvrir le menu"
+    aria-expanded="false"
+    aria-controls="mobile-menu"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav id="mobile-menu" class="burger-panel" aria-hidden="true">
+    <a href="/">Accueil</a>
+    <a href="/a-propos">À propos</a>
+    <a href="/mes-projets">Mes projets</a>
+    <a href="/wip">Inspirations</a>
+    <Button title="Contact" type="button-fill" link="/contact/" />
+  </nav>
+</div>
+
+<script>
+  const toggle = document.querySelector(".burger-toggle");
+  const panel = document.querySelector(".burger-panel");
+
+  if (toggle && panel) {
+    toggle.addEventListener("click", () => {
+      const isOpen = panel.classList.toggle("is-open");
+
+      toggle.setAttribute("aria-expanded", String(isOpen));
+      panel.setAttribute("aria-hidden", String(!isOpen));
+    });
+  }
+</script>
+
+<style>
+  .burger-menu {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .burger-menu {
+      display: block;
+    }
+
+    .burger-toggle {
+      position: fixed;
+      left: 20px;
+      bottom: 20px;
+      z-index: 1001;
+
+      width: 60px;
+      height: 60px;
+      border: 1.5px solid #351e1c;
+      border-radius: 999px;
+      background-color: #ececdc;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .burger-toggle span {
+      width: 24px;
+      height: 2px;
+      background-color: #351e1c;
+      display: block;
+    }
+
+    .burger-panel {
+      position: fixed;
+      left: 20px;
+      bottom: 90px;
+      z-index: 1000;
+
+      min-width: 220px;
+      padding: 20px;
+      border: 1.5px solid #733635;
+      border-radius: 16px;
+      background-color: #f5f4ed;
+
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(10px);
+      transition: 0.25s ease;
+    }
+
+    .burger-panel.is-open {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    .burger-panel a {
+      text-decoration: none;
+      color: #351e1c;
+      font-family: "Fibra One";
+      font-size: 20px;
+    }
+  }
+</style>
