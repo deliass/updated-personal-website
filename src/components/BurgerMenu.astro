@@ -49,7 +49,7 @@ import Button from "./Button.astro";
 
     .burger-toggle {
       position: fixed;
-      left: 20px;
+      right: 20px;
       bottom: 20px;
       z-index: 1001;
 
@@ -64,7 +64,6 @@ import Button from "./Button.astro";
       align-items: center;
       gap: 6px;
       cursor: pointer;
-      box-shadow: 0 8px 20px var(--text-primary);
     }
 
     .burger-toggle span {
@@ -75,7 +74,7 @@ import Button from "./Button.astro";
     }
 
     .burger-panel {
-      position: fixed;
+      position: sticky;
       left: 20px;
       bottom: 90px;
       z-index: 1000;

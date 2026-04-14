@@ -10,12 +10,7 @@ import Button from "../components/Button.astro";
       une vue d’ensemble de ma vie professionnelle.
     </p>
     <div class="cv__assets">
-      <Button
-        title="Télécharger mon CV"
-        link="/figuerola-nelia_cv.pdf"
-        type="button"
-        download
-      />
+      <Button title="Télécharger mon CV" pdfUrl="/figuerola-nelia_CV.pdf" />
       <img src="/public/assets/icons/cv.svg" alt="" width="78" height="68" />
     </div>
   </div>
@@ -31,6 +26,8 @@ import Button from "../components/Button.astro";
   }
 
   .cv {
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -39,6 +36,7 @@ import Button from "../components/Button.astro";
 
   .cv__inner {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
     gap: 20px;
@@ -48,6 +46,7 @@ import Button from "../components/Button.astro";
 
   .cv__assets {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -63,48 +62,8 @@ import Button from "../components/Button.astro";
   }
 
   @media (max-width: 768px) {
-    .cv__inner {
-      padding: 40px 24px;
-      gap: 16px;
-    }
-
-    h2 {
-      font-size: 32px;
-      text-align: center;
-    }
-
-    p {
-      font-size: 18px;
-    }
-
-    .cv__assets {
-      flex-direction: column;
-      align-items: stretch;
-      gap: 16px;
-    }
-
-    .cv__assets img {
-      margin: 0 auto;
-      width: 56px;
-      height: auto;
-    }
-  }
-
-  @media (max-width: 480px) {
-    h2 {
-      font-size: 28px;
-    }
-
-    p {
-      font-size: 16px;
-    }
-
-    .cv__inner {
-      padding: 24px 16px;
-    }
-
-    .cv__assets {
-      gap: 12px;
+    img {
+      display: none;
     }
   }
 </style>

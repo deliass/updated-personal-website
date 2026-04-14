@@ -60,6 +60,7 @@ import CV from "../components/CV.astro";
   body {
     background: var(--primary);
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     padding: 30px 0px 30px 0px;
@@ -69,6 +70,7 @@ import CV from "../components/CV.astro";
 
   main {
     display: flex;
+    flex-wrap: wrap;
     padding: 0px 120px;
     flex-direction: column;
     box-sizing: border-box;
@@ -76,6 +78,7 @@ import CV from "../components/CV.astro";
 
   .hero {
     display: flex;
+    flex-wrap: wrap;
     width: fit-content;
     margin: 0 auto;
     flex-direction: column;
@@ -85,10 +88,10 @@ import CV from "../components/CV.astro";
 
   header {
     display: flex;
+    flex-wrap: wrap;
     width: fit-content;
     padding: 0px 120px;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
     gap: 30px;
@@ -137,18 +140,21 @@ import CV from "../components/CV.astro";
   .tel,
   .email {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 10px;
   }
 
   .contact-info {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     gap: 30px;
   }
 
   .bottom-header {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
