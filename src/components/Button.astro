@@ -8,6 +8,7 @@ const { title, type, link, pdfUrl } = Astro.props;
   download={pdfUrl ? true : undefined}
 >
   {title}
+  <span class="arrow">→</span>
 </a>
 
 <style>
@@ -23,7 +24,7 @@ const { title, type, link, pdfUrl } = Astro.props;
     background-color: var(--secondary);
     color: var(--title);
     font-family: "Fibra One";
-    font-size: 20px;
+    font-size: var(--step-0);
     list-style: none;
     text-decoration: none;
   }
@@ -39,7 +40,21 @@ const { title, type, link, pdfUrl } = Astro.props;
     color: var(--text-primary);
     border: dashed 1.5px var(--text-primary);
   }
+
+  .button-fill:hover .arrow {
+    display: none;
+  }
   .button:hover {
     border: dashed 1.5px var(--text-primary);
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  a:hover .arrow {
+    display: flex;
+    opacity: 1;
+    transition: opacity 0.3s ease;
   }
 </style>

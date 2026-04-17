@@ -149,15 +149,14 @@ import Contact from "../components/Contact.astro";
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 30px 0px 30px 0px;
+    padding: 30px 0px;
     align-items: stretch;
-    gap: 80px;
+    gap: var(--space-2xl);
   }
 
   .hero {
     display: flex;
-    width: fit-content;
-    margin: 0 auto;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -166,15 +165,17 @@ import Contact from "../components/Contact.astro";
 
   header {
     display: flex;
-    width: fit-content;
+    width: 100%;
     margin: 0 auto;
-    padding: 0px 120px;
+    padding: 0 var(--space-2xl-3xl);
     flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
     gap: 20px;
+    box-sizing: border-box;
   }
+
   .title {
     display: flex;
     flex-direction: column;
@@ -184,7 +185,7 @@ import Contact from "../components/Contact.astro";
   h1 {
     color: var(--title);
     font-family: "Monotalic";
-    font-size: 55px;
+    font-size: var(--step-4);
     margin-top: 0px;
     margin-bottom: 0px;
   }
@@ -192,7 +193,7 @@ import Contact from "../components/Contact.astro";
   h2 {
     color: var(--title);
     font-family: "ABC Favorit Mono Edu";
-    font-size: 44px;
+    font-size: var(--step-3);
     margin-top: 0px;
     margin-bottom: 0px;
   }
@@ -200,14 +201,15 @@ import Contact from "../components/Contact.astro";
   h3 {
     color: var(--title);
     font-family: "ABC Favorit Mono Edu";
-    font-size: 35px;
+    font-size: var(--step-2);
     margin-top: 0px;
     margin-bottom: 0px;
   }
+
   p {
     color: var(--text-primary);
     font-family: "Fibra One";
-    font-size: 20px;
+    font-size: var(--step-0);
     margin-top: 0px;
     margin-bottom: 0px;
   }
@@ -215,22 +217,25 @@ import Contact from "../components/Contact.astro";
   li {
     color: var(--text-primary);
     font-family: "Fibra One";
-    font-size: 20px;
+    font-size: var(--step-0);
     margin-top: 0px;
     margin-bottom: 0px;
   }
+
   main {
     display: flex;
-    padding: 0px 120px;
-    width: fit-content;
+    padding: 0 var(--space-2xl-3xl);
+    width: 100%;
     margin: 0 auto;
     flex-direction: column;
     align-self: stretch;
-    gap: 80px;
+    gap: var(--space-2xl);
+    box-sizing: border-box;
   }
+
   .few-words {
     display: flex;
-    padding: 60px 0px;
+    padding: var(--space-xl) 0;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -243,6 +248,8 @@ import Contact from "../components/Contact.astro";
     justify-content: space-between;
     align-items: flex-end;
     align-self: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
   }
 
   .parkour {
@@ -258,7 +265,7 @@ import Contact from "../components/Contact.astro";
     flex-direction: column;
     width: 100%;
     gap: 20px;
-    padding: 60px 120px;
+    padding: var(--space-xl) var(--space-2xl-3xl);
     box-sizing: border-box;
     align-items: flex-start;
   }
@@ -266,9 +273,11 @@ import Contact from "../components/Contact.astro";
   .title_parkour {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
+    gap: 10px;
   }
 
   .alternance,

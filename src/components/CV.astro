@@ -7,11 +7,16 @@ import Button from "../components/Button.astro";
     <h2>Garder mon CV</h2>
     <p>
       Si mes projets vous plaisent, vous pouvez télécharger mon CV pour garder
-      une vue d’ensemble de ma vie professionnelle.
+      une vue d'ensemble de ma vie professionnelle.
     </p>
     <div class="cv__assets">
       <Button title="Télécharger mon CV" pdfUrl="/figuerola-nelia_CV.pdf" />
-      <img src="/public/assets/icons/cv.svg" alt="" width="78" height="68" />
+      <img
+        src="/public/assets/icons/cv.svg"
+        alt=""
+        aria-hidden="true"
+        class="cv__deco"
+      />
     </div>
   </div>
 </section>
@@ -20,14 +25,19 @@ import Button from "../components/Button.astro";
   h2 {
     color: var(--title);
     font-family: "ABC Favorit Mono Edu";
-    font-size: 44px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    font-size: var(--step-4);
+    margin: 0;
+  }
+
+  p {
+    color: var(--text-primary);
+    font-family: "Fibra One";
+    font-size: var(--step-0);
+    margin: 0;
   }
 
   .cv {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -36,33 +46,29 @@ import Button from "../components/Button.astro";
 
   .cv__inner {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
-    gap: 20px;
-    padding: 60px 120px;
+    gap: var(--space-s);
+    padding: var(--space-m-l);
     box-sizing: border-box;
   }
 
   .cv__assets {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
+    flex-wrap: wrap;
   }
 
-  p {
-    color: var(--text-primary);
-    font-family: "Fibra One";
-    font-size: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+  .cv__deco {
+    max-width: 78px;
+    height: auto;
   }
 
-  @media (max-width: 768px) {
-    img {
+  @media (max-width: 480px) {
+    .cv__deco {
       display: none;
     }
   }

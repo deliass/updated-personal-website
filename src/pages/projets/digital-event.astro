@@ -1,7 +1,6 @@
 ---
 import Nav from "../../components/Nav.astro";
 import Footer from "../../components/Footer.astro";
-import Back from "../../components/Back.astro";
 ---
 
 <html lang="fr">
@@ -18,7 +17,6 @@ import Back from "../../components/Back.astro";
   <body>
     <Nav />
     <header>
-      <Back />
       <h1>Projet photo *Digital Event 2026</h1>
       <div class="hero">
         <img
@@ -100,27 +98,27 @@ import Back from "../../components/Back.astro";
   body {
     background: var(--primary);
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
     justify-content: center;
-    padding: 30px 0px 30px 0px;
-    align-items: stretch;
-    gap: 80px;
+    gap: var(--space-xl);
   }
 
   header {
     display: flex;
-    padding: 0px 120px;
+    width: 100%;
+    padding: 0 var(--space-s-m);
     flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: center;
-    gap: 20px;
+    justify-content: flex-start;
+    gap: var(--space-s);
   }
 
   h1 {
     color: var(--title);
     font-family: "Monotalic";
-    font-size: 55px;
+    font-size: var(--step-5);
     margin-top: 0px;
     margin-bottom: 0px;
   }
@@ -128,7 +126,7 @@ import Back from "../../components/Back.astro";
   h2 {
     color: var(--title);
     font-family: "ABC Favorit Mono Edu";
-    font-size: 44px;
+    font-size: var(--step-4);
     margin-top: 0px;
     margin-bottom: 0px;
   }
@@ -136,14 +134,15 @@ import Back from "../../components/Back.astro";
   h3 {
     color: var(--title);
     font-family: "ABC Favorit Mono Edu";
-    font-size: 35px;
+    font-size: var(--step-3);
     margin-top: 0px;
     margin-bottom: 0px;
   }
+
   p {
     color: var(--text-primary);
     font-family: "Fibra One";
-    font-size: 20px;
+    font-size: var(--step-0);
     margin-top: 0px;
     margin-bottom: 0px;
   }
@@ -151,31 +150,30 @@ import Back from "../../components/Back.astro";
   a {
     color: var(--text-primary);
     font-family: "Fibra One";
-    font-size: 20px;
+    font-size: var(--step-0);
     margin-top: 0px;
     margin-bottom: 0px;
   }
 
   main {
     display: flex;
-    padding: 0px 120px;
-    width: fit-content;
-    margin: 0 auto;
-    flex-direction: column;
-    align-self: stretch;
-    gap: 80px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    gap: var(--space-2xl);
+    box-sizing: border-box;
   }
 
   .hero {
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 20px;
+    gap: var(--space-2xs);
   }
 
   .photos {
     display: flex;
-    gap: 20px;
+    width: 100%;
+    gap: var(--space-2xs);
   }
 
   .photo-bottom {
@@ -204,7 +202,7 @@ import Back from "../../components/Back.astro";
     flex-direction: column;
     width: 100%;
     gap: 20px;
-    padding: 60px 120px;
+    padding: var(--space-s-m);
     box-sizing: border-box;
   }
 </style>

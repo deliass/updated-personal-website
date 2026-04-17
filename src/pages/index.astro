@@ -3,7 +3,6 @@ import Button from "../components/Button.astro";
 import Nav from "../components/Nav.astro";
 import Footer from "../components/Footer.astro";
 import Contact from "../components/Contact.astro";
-import BurgerMenu from "../components/BurgerMenu.astro";
 ---
 
 <html lang="fr">
@@ -20,7 +19,6 @@ import BurgerMenu from "../components/BurgerMenu.astro";
   </head>
   <body>
     <Nav />
-    <BurgerMenu />
     <header>
       <img
         class="top"
@@ -30,10 +28,8 @@ import BurgerMenu from "../components/BurgerMenu.astro";
         height="97"
       />
       <section class="hero">
-        <div class="right-side">
-          <h1>Salut, moi c’est Nélia&nbsp;!</h1>
-          <h2>Je conçois des interfaces claires, accessibles et sobres.</h2>
-        </div>
+        <h1>Salut, moi c’est Nélia&nbsp;!</h1>
+        <h3>Je conçois des interfaces claires, accessibles et sobres.</h3>
       </section>
       <img
         class="bottom"
@@ -111,23 +107,21 @@ import BurgerMenu from "../components/BurgerMenu.astro";
     background: var(--primary);
     display: flex;
     flex-wrap: wrap;
-    width: min(100% 830px);
-    flex-direction: column;
+    margin: 0 auto;
     justify-content: center;
-    padding: 30px 0px;
-    gap: 80px;
+    gap: var(--space-xl);
   }
 
   header {
     display: flex;
-    width: min(100% 830px);
-    margin: 0 auto;
-    padding: 0px 120px;
+    width: 100%;
+    padding: 0 var(--space-m-l);
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: var(--space-s);
+    box-sizing: border-box;
   }
 
   header .top {
@@ -137,10 +131,11 @@ import BurgerMenu from "../components/BurgerMenu.astro";
   header .bottom {
     align-self: flex-end;
   }
+
   h1 {
     color: var(--title);
     font-family: "monotalic";
-    font-size: 55px;
+    font-size: var(--step-5);
     margin-top: 0px;
     margin-bottom: 0px;
   }
@@ -148,7 +143,7 @@ import BurgerMenu from "../components/BurgerMenu.astro";
   h2 {
     color: var(--title);
     font-family: "ABC Favorit Mono Edu";
-    font-size: 44px;
+    font-size: var(--step-4);
     margin-top: 0px;
     margin-bottom: 0px;
   }
@@ -156,7 +151,7 @@ import BurgerMenu from "../components/BurgerMenu.astro";
   h3 {
     color: var(--title);
     font-family: "ABC Favorit Mono Edu";
-    font-size: 35px;
+    font-size: var(--step-3);
     margin-top: 0px;
     margin-bottom: 0px;
   }
@@ -164,34 +159,28 @@ import BurgerMenu from "../components/BurgerMenu.astro";
   p {
     color: var(--text-primary);
     font-family: "Fibra One";
-    font-size: 20px;
+    font-size: var(--step-0);
     margin-top: 0px;
     margin-bottom: 0px;
   }
 
   .hero {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0 auto;
-  }
-  .right-side {
-    display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-start;
-    gap: 50px;
+    gap: var(--space-l);
+    padding: var(--space-l);
   }
 
   main {
     display: flex;
     flex-wrap: wrap;
-    padding: 0px 120px;
-    width: min(100% 1200px);
-    margin: 0 auto;
+    max-width: 1200px;
     flex-direction: column;
     align-self: stretch;
-    gap: 80px;
+    gap: var(--space-2xl);
+    box-sizing: border-box;
   }
 
   .welcome {
@@ -199,18 +188,19 @@ import BurgerMenu from "../components/BurgerMenu.astro";
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: min(100% 1200px);
+    width: 100%;
     background: var(--secondary);
   }
+
   .welcome__inner {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 100%;
-    gap: 20px;
-    padding: 60px 120px;
+    gap: var(--space-m);
+    padding: var(--space-l-xl) var(--space-2xl-3xl);
     box-sizing: border-box;
   }
+
   .welcome__assets {
     display: flex;
     flex-wrap: wrap;
@@ -218,33 +208,35 @@ import BurgerMenu from "../components/BurgerMenu.astro";
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
+    gap: var(--space-m);
   }
 
   .inspi {
     display: flex;
     flex-wrap: wrap;
-    padding: 60px 0px;
+    padding: var(--space-xs-s);
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 30px;
+    align-items: flex-start;
+    gap: var(--space-m);
     align-self: stretch;
   }
 
   .inspi__assets {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     align-self: stretch;
   }
 
   .inspi__inner {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    gap: 50px;
+    gap: var(--space-m);
   }
+
   .speakers,
   .design,
   .veille {
@@ -254,25 +246,20 @@ import BurgerMenu from "../components/BurgerMenu.astro";
     background-color: var(--secondary);
     gap: 20px;
     justify-content: space-between;
-    padding: 30px;
+    padding: var(--space-s-m);
     align-items: flex-start;
     align-self: start;
     border-radius: 10px;
   }
 
-  @media (max-width: 768px) {
-    body {
-      display: flex;
-      padding: 0px 20px;
+  /* Media query uniquement pour cacher les déco SVG sur très petit écran */
+  @media (max-width: 480px) {
+    * img {
+      display: none;
     }
 
-    .header,
-    .main,
-    .welcome__inner {
-      padding: 0px 50px;
-    }
-    img {
-      display: none;
+    .inspi__inner {
+      flex-wrap: wrap;
     }
   }
 </style>

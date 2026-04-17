@@ -22,33 +22,28 @@ import CV from "../components/CV.astro";
         <h1>Me contacter</h1>
         <img src="/public/assets/icons/contact-h.svg" alt="" />
       </div>
-      <div class="hero">
-        <p>N’hésitez pas à me contacter si mon profil vous a plu !</p>
-      </div>
+      <p>N’hésitez pas à me contacter si mon profil vous a plu !</p>
     </header>
     <main>
-      <div class="bottom-header">
-        <div class="contact-info">
-          <div class="tel">
-            <img
-              src="/public/assets/icons/phone.svg"
-              alt="Téléphone"
-              width="19"
-              height="19"
-            />
-            <a href="tel:+33612345678">+33 6 12 34 56 78</a>
-          </div>
-          <div class="email">
-            <img
-              src="/public/assets/icons/mail.svg"
-              alt="Email"
-              width="19"
-              height="19"
-            />
-            <a href="mailto:nelia@tuta.io">nelia@tuta.io</a>
-          </div>
+      <div class="contact__info">
+        <div class="tel">
+          <img
+            src="/public/assets/icons/phone.svg"
+            alt="Téléphone"
+            width="19"
+            height="19"
+          />
+          <a href="tel:+33612345678">+33 6 23 83 40 84</a>
         </div>
-        <img src="/public/assets/icons/contact-header.svg" alt="" />
+        <div class="email">
+          <img
+            src="/public/assets/icons/mail.svg"
+            alt="Email"
+            width="19"
+            height="19"
+          />
+          <a href="mailto:nelia@tuta.io">nelia@tuta.io</a>
+        </div>
       </div>
     </main>
     <CV />
@@ -61,46 +56,38 @@ import CV from "../components/CV.astro";
     background: var(--primary);
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    width: 100%;
     justify-content: center;
-    padding: 30px 0px 30px 0px;
-    align-items: stretch;
-    gap: 80px;
+    gap: var(--space-xl);
+  }
+
+  header {
+    display: flex;
+    width: 100%;
+    padding: 0 var(--space-m-l);
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--space-s);
+    box-sizing: border-box;
   }
 
   main {
     display: flex;
     flex-wrap: wrap;
-    padding: 0px 120px;
+    padding: 0 var(--space-m-l);
+    width: 100%;
     flex-direction: column;
+    align-self: stretch;
+    gap: var(--space-2xl);
     box-sizing: border-box;
-  }
-
-  .hero {
-    display: flex;
-    flex-wrap: wrap;
-    width: fit-content;
-    margin: 0 auto;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  header {
-    display: flex;
-    flex-wrap: wrap;
-    width: fit-content;
-    padding: 0px 120px;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 30px;
   }
 
   h1 {
     color: var(--title);
-    font-family: "Monotalic";
-    font-size: 55px;
+    font-family: "monotalic";
+    font-size: var(--step-5);
     margin-top: 0px;
     margin-bottom: 0px;
   }
@@ -108,7 +95,7 @@ import CV from "../components/CV.astro";
   h2 {
     color: var(--title);
     font-family: "ABC Favorit Mono Edu";
-    font-size: 44px;
+    font-size: var(--step-4);
     margin-top: 0px;
     margin-bottom: 0px;
   }
@@ -116,7 +103,7 @@ import CV from "../components/CV.astro";
   h3 {
     color: var(--title);
     font-family: "ABC Favorit Mono Edu";
-    font-size: 35px;
+    font-size: var(--step-3);
     margin-top: 0px;
     margin-bottom: 0px;
   }
@@ -124,7 +111,7 @@ import CV from "../components/CV.astro";
   p {
     color: var(--text-primary);
     font-family: "Fibra One";
-    font-size: 20px;
+    font-size: var(--step-0);
     margin-top: 0px;
     margin-bottom: 0px;
   }
@@ -133,7 +120,7 @@ import CV from "../components/CV.astro";
   .email a {
     color: var(--text-primary);
     font-family: "Fibra One";
-    font-size: 20px;
+    font-size: var(--step-0);
     text-decoration: none;
   }
 
@@ -142,21 +129,18 @@ import CV from "../components/CV.astro";
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 10px;
+    gap: var(--space-2xs);
   }
 
-  .contact-info {
+  .contact__info {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    gap: 30px;
+    gap: var(--space-2xs);
   }
 
-  .bottom-header {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  @media (max-width: 480px) {
+    * img {
+      display: none;
+    }
   }
 </style>
