@@ -19,7 +19,7 @@ import Head from "../components/Head.astro";
       <header>
         <div class="title">
           <h1>Ce qu'il faut savoir sur moi</h1>
-          <img src="/assets/icons/about-h.svg" alt="" />
+          <img src="/portfolio/assets/icons/about-h.svg" alt="" />
         </div>
         <div class="hero">
           <p>
@@ -51,8 +51,13 @@ import Head from "../components/Head.astro";
           digital.
         </p>
         <div class="cta">
-          <Button title="Découvrir mes projets" link="/mes-projets/" />
-          <img src="/assets/icons/star1.svg" alt="" width="46" height="61" />
+          <Button title="Découvrir mes projets" href="/mes-projets/" />
+          <img
+            src="/portfolio/assets/icons/star1.svg"
+            alt=""
+            width="46"
+            height="61"
+          />
         </div>
       </section>
       <section class="parkour">
@@ -121,7 +126,10 @@ import Head from "../components/Head.astro";
               <li>Gestion d'équipe</li>
             </ul>
           </div>
-          <Button title="Télécharger mon CV" pdfUrl="/figuerola-nelia_CV.pdf" />
+          <Button
+            title="Télécharger mon CV"
+            pdfUrl="/portfolio/assets/pdfs/figuerola-nelia_CV.pdf"
+          />
         </div>
       </section>
       <Contact />
