@@ -1,249 +1,151 @@
 ---
-import Button from "../components/Button.astro";
-import Nav from "../components/Nav.astro";
-import Footer from "../components/Footer.astro";
-import Contact from "../components/Contact.astro";
-import Head from "../components/Head.astro";
+import BaseLayout from "../layout/default.astro"
+import Button from "../components/Button.astro"
+import Contact from "../components/Contact.astro"
 ---
 
-<html lang="fr">
-  <Head />
-  <body>
-    <Nav />
-    <main>
-      <header>
-        <img
-          class="top"
-          src="/portfolio/assets/icons/top-effect.svg"
-          alt=""
-          width="111"
-          height="97"
-        />
-        <section class="hero">
-          <h1>Salut, moi c’est Nélia&nbsp;!</h1>
-          <h3>Je conçois des interfaces claires, accessibles et sobres.</h3>
-        </section>
-        <img
-          class="bottom"
-          src="/portfolio/assets/icons/bottom-effect.svg"
-          alt=""
-          width="91"
-          height="87"
-        />
-      </header>
-      <section class="welcome">
-        <div class="welcome__inner">
-          <h2>Bienvenue sur mon site</h2>
-          <p>
-            Ici, vous découvrirez mon profil, mais aussi ma personnalité, car ce
-            que j’aime faire, c’est travailler avec ceux qui partagent ma vision
-            du travail.
-          </p>
-          <p>
-            J’adore le digital, et j’ai plein de choses à vous présenter. De ma
-            veille et mes inspirations, jusqu’aux projets concrets et aboutis.
-          </p>
-          <div class="welcome__assets">
-            <Button
-              title="Découvrir mes projets"
-              href="/portfolio/mes-projets/"
-            />
-            <img
-              src="/portfolio/assets/icons/welcome.svg"
-              alt=""
-              width="78"
-              height="68"
-            />
-          </div>
-        </div>
-      </section>
-      <section class="inspi">
-        <div class="inspi__assets">
-          <h2>Veille et inspirations</h2>
-          <img src="/portfolio/assets/icons/heart.svg" alt="" />
-        </div>
-        <div class="inspi__inner">
-          <div class="speakers">
-            <h3>Personnalités & Speakers</h3>
-            <p>
-              Professionnels, amateurs ou artistes, j’aime ouvrir ma veille à
-              tous les horizons pour en apprendre toujours, même à petite
-              échelle.
-            </p>
-          </div>
-          <div class="design">
-            <h3>Typographies & Design</h3>
-            <p>
-              Je préfère les typos et les designs accessibles. Mais voir des
-              designs et typos souvent plus beaux que utiles, me permet de
-              garder une inspiration originale.
-            </p>
-          </div>
-          <div class="veille">
-            <h3>Veille</h3>
-            <p>
-              J’ai mis du temps à adapter un système de veille efficace. Flux
-              RSS, influenceurs, boards. Aujourd’hui, j’ai préféré tout réunir
-              en seul endroit, mon site.
-            </p>
-          </div>
-        </div>
-        <Button title="Voir mes inspirations" href="/portfolio/wip/" />
-      </section>
-      <Contact />
-    </main>
-    <Footer />
-  </body>
-</html>
+<BaseLayout pageTitle="Accueil">
+	<img
+		class="top"
+		src="/assets/icons/top-effect.svg"
+		alt=""
+		width="111"
+		height="97"
+	/>
+	<section class="hero">
+		<h1>Salut, moi c’est Nélia&nbsp;!</h1>
+		<h3>Je conçois des interfaces claires, accessibles et sobres.</h3>
+	</section>
+	<img
+		class="bottom"
+		src="/assets/icons/bottom-effect.svg"
+		alt=""
+		width="91"
+		height="87"
+	/>
+	<section class="welcome">
+		<div class="welcome__inner">
+			<h2>Bienvenue sur mon site</h2>
+			<p>
+				Ici, vous découvrirez mon profil, mais aussi ma personnalité, car ce que
+				j’aime faire, c’est travailler avec ceux qui partagent ma vision du
+				travail.
+			</p>
+			<p>
+				J’adore le digital, et j’ai plein de choses à vous présenter. De ma
+				veille et mes inspirations, jusqu’aux projets concrets et aboutis.
+			</p>
+			<div class="welcome__assets">
+				<Button title="Découvrir mes projets" href="/mes-projets/" />
+				<img src="/assets/icons/welcome.svg" alt="" width="78" height="68" />
+			</div>
+		</div>
+	</section>
+	<section class="inspi">
+		<div class="inspi__assets">
+			<h2>Veille et inspirations</h2>
+			<img src="/assets/icons/heart.svg" alt="" />
+		</div>
+		<div class="inspi__inner">
+			<div class="speakers">
+				<h3>Personnalités & Speakers</h3>
+				<p>
+					Professionnels, amateurs ou artistes, j’aime ouvrir ma veille à tous
+					les horizons pour en apprendre toujours, même à petite échelle.
+				</p>
+			</div>
+			<div class="design">
+				<h3>Typographies & Design</h3>
+				<p>
+					Je préfère les typos et les designs accessibles. Mais voir des designs
+					et typos souvent plus beaux que utiles, me permet de garder une
+					inspiration originale.
+				</p>
+			</div>
+			<div class="veille">
+				<h3>Veille</h3>
+				<p>
+					J’ai mis du temps à adapter un système de veille efficace. Flux RSS,
+					influenceurs, boards. Aujourd’hui, j’ai préféré tout réunir en seul
+					endroit, mon site.
+				</p>
+			</div>
+		</div>
+		<Button title="Voir mes inspirations" href="/wip/" />
+	</section>
+	<Contact />
+</BaseLayout>
 
 <style>
-  body {
-    background: var(--primary);
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    justify-content: center;
-    gap: var(--space-xl);
-  }
+	.welcome {
+		width: 100%;
+		background: var(--secondary);
+	}
 
-  header {
-    display: flex;
-    width: 100%;
-    padding: 0 var(--space-m-l);
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: var(--space-s);
-    box-sizing: border-box;
-  }
+	.welcome__inner {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-m);
+		padding: var(--space-l-xl);
+	}
 
-  header .top {
-    align-self: flex-start;
-  }
+	.welcome__assets {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		align-self: stretch;
+		gap: var(--space-m);
+	}
 
-  header .bottom {
-    align-self: flex-end;
-  }
+	.inspi {
+		display: flex;
+		padding: var(--space-xs-s);
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		gap: var(--space-m);
+		align-self: stretch;
+	}
 
-  h1 {
-    color: var(--title);
-    font-family: "monotalic";
-    font-size: var(--step-5);
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
+	.inspi__assets {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		align-self: stretch;
+	}
 
-  h2 {
-    color: var(--title);
-    font-family: "ABC Favorit Mono Edu";
-    font-size: var(--step-4);
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
+	.inspi__inner {
+		display: flex;
+		flex-direction: row;
+		gap: var(--space-m);
+	}
 
-  h3 {
-    color: var(--title);
-    font-family: "ABC Favorit Mono Edu";
-    font-size: var(--step-3);
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
+	.speakers,
+	.design,
+	.veille {
+		display: flex;
+		flex-direction: column;
+		background-color: var(--secondary);
+		gap: 20px;
+		padding: var(--space-s-m);
+		border-radius: 10px;
+	}
 
-  p {
-    color: var(--text-primary);
-    font-family: "Fibra One";
-    font-size: var(--step-0);
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
+	@media screen and (max-width: 480px) {
+		* img {
+			display: none;
+		}
 
-  .hero {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: var(--space-l);
-    padding: var(--space-l);
-  }
+		main {
+			margin-top: 0;
+		}
 
-  main {
-    display: flex;
-    max-width: 1200px;
-    flex-direction: column;
-    gap: var(--space-2xl);
-    margin-top: 150px;
-  }
-
-  .welcome {
-    width: 100%;
-    background: var(--secondary);
-  }
-
-  .welcome__inner {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-m);
-    padding: var(--space-l-xl);
-  }
-
-  .welcome__assets {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    align-self: stretch;
-    gap: var(--space-m);
-  }
-
-  .inspi {
-    display: flex;
-    padding: var(--space-xs-s);
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: var(--space-m);
-    align-self: stretch;
-  }
-
-  .inspi__assets {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    align-self: stretch;
-  }
-
-  .inspi__inner {
-    display: flex;
-    flex-direction: row;
-    gap: var(--space-m);
-  }
-
-  .speakers,
-  .design,
-  .veille {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--secondary);
-    gap: 20px;
-    padding: var(--space-s-m);
-    border-radius: 10px;
-  }
-
-  @media screen and (max-width: 480px) {
-    * img {
-      display: none;
-    }
-
-    main {
-      margin-top: 0;
-    }
-
-    .inspi__inner {
-      flex-wrap: wrap;
-    }
-  }
+		.inspi__inner {
+			flex-wrap: wrap;
+		}
+	}
 </style>

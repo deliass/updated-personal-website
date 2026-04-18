@@ -1,175 +1,172 @@
 ---
-import Nav from "../../components/Nav.astro";
-import Footer from "../../components/Footer.astro";
-import Breadcrumbs from "../../components/Breadcrumbs.astro";
-import Head from "../../components/Head.astro";
+import Nav from "../../components/Nav.astro"
+import Footer from "../../components/Footer.astro"
+import Breadcrumbs from "../../components/Breadcrumbs.astro"
+import Head from "../../components/Head.astro"
 ---
 
 <html lang="fr">
-  <Head />
-  <body>
-    <Nav />
-    <main>
-      <Breadcrumbs
-        items={[
-          { href: "/portfolio/", label: "Accueil" },
-          { href: "/portfolio/mes-projets", label: "Mes projets" },
-        ]}
-        current="Mister Freeze"
-      />
-      <header>
-        <h1 class="project-title">Webdesign du site de *Mister Freeze</h1>
-        <div class="hero">
-          <img
-            src="/portfolio/assets/images/projects/mister-freeze/cedric.jpg"
-            alt=""
-          />
-        </div>
-      </header>
-      <section class="def">
-        <div class="def__inner">
-          <p>
-            <b>*Mister Freeze :</b><br />L’association Mister Freeze réunit un
-            collectif d’artistes (peintres, graffeurs, photographes, graphistes,
-            webdesigners, réalisateurs...) dont les envies respectives
-            convergent vers une diffusion de l’art au plus grand nombre sur un
-            maximum de supports. Profondément passionnés et impliqués, les
-            membres de l’association multiplient les interventions artistiques
-            auprès du grand public (expositions, ateliers, conférences,
-            performances, fresques murales) pour mieux former les jeunes
-            talents, initier petits et grands et plus largement, rendre l’art
-            accessible à toutes et à tous.
-          </p>
-          <a href="https://www.instagram.com/expomisterfreeze/" target="_blank"
-            >Visiter leur Instagram</a
-          >
-        </div>
-      </section>
-      <section class="contexte">
-        <h2 class="project-heading">Contexte</h2>
-        <p>
-          Durant mon stage de 4 mois, j'ai eu la chance de partir à Montauban
-          pour travailler sur le design de leur site web. J'ai pu rencontrer
-          l'équipe, visiter les locaux, et discuter directement avec eux lors
-          des prises de décisions importantes dans l'élaboration de la maquette.
-        </p>
-      </section>
-      <section class="skills">
-        <h2 class="project-heading">Compétences</h2>
-        <p>
-          Pendant ce projet, j'ai travailler sur Figma, mais j'ai pu développer
-          beaucoup de soft skills, comme la prise de lead lors de réunion avec
-          le client, une organisation très pointue puisque ma boss développait
-          les composants et les pages en même temps juste à côté de moi. J'ai
-          aussi appris certaines règles d'UI grâce à ces artistes, ou encore
-          j'ai pu assister à la création de leur charte graphique.
-        </p>
-      </section>
-      <section class="productions">
-        <h2 class="project-heading">La maquette</h2>
-        <a
-          href="https://www.figma.com/proto/bKqUAO9QACp7bBJ0fhcqS7/Mister-Freeze?page-id=0%3A1&node-id=43-266&viewport=-2253%2C202%2C0.11&t=Ufkp9kpCKJwqa99e-1&scaling=min-zoom&content-scaling=fixed"
-          target="_blank">Voir la maquette sur Figma</a
-        >
-        <p>
-          La maquette n'est malheureusement pas finie ici car je n'ai pas pu le
-          faire par faute de temps, mais c'était un super exercice.
-        </p>
-      </section>
-    </main>
-  </body><Footer />
+	<Head />
+	<body>
+		<Nav />
+		<main>
+			<Breadcrumbs
+				items={[
+					{ href: "/", label: "Accueil" },
+					{ href: "/projets", label: "Mes projets" },
+				]}
+				current="Mister Freeze"
+			/>
+			<header>
+				<h1 class="project-title">Webdesign du site de *Mister Freeze</h1>
+				<div class="hero">
+					<img src="/assets/images/projects/mister-freeze/cedric.jpg" alt="" />
+				</div>
+			</header>
+			<section class="def">
+				<div class="def__inner">
+					<p>
+						<b>*Mister Freeze :</b><br />L’association Mister Freeze réunit un
+						collectif d’artistes (peintres, graffeurs, photographes, graphistes,
+						webdesigners, réalisateurs...) dont les envies respectives
+						convergent vers une diffusion de l’art au plus grand nombre sur un
+						maximum de supports. Profondément passionnés et impliqués, les
+						membres de l’association multiplient les interventions artistiques
+						auprès du grand public (expositions, ateliers, conférences,
+						performances, fresques murales) pour mieux former les jeunes
+						talents, initier petits et grands et plus largement, rendre l’art
+						accessible à toutes et à tous.
+					</p>
+					<a href="https://www.instagram.com/expomisterfreeze/" target="_blank"
+						>Visiter leur Instagram</a
+					>
+				</div>
+			</section>
+			<section class="contexte">
+				<h2 class="project-heading">Contexte</h2>
+				<p>
+					Durant mon stage de 4 mois, j'ai eu la chance de partir à Montauban
+					pour travailler sur le design de leur site web. J'ai pu rencontrer
+					l'équipe, visiter les locaux, et discuter directement avec eux lors
+					des prises de décisions importantes dans l'élaboration de la maquette.
+				</p>
+			</section>
+			<section class="skills">
+				<h2 class="project-heading">Compétences</h2>
+				<p>
+					Pendant ce projet, j'ai travailler sur Figma, mais j'ai pu développer
+					beaucoup de soft skills, comme la prise de lead lors de réunion avec
+					le client, une organisation très pointue puisque ma boss développait
+					les composants et les pages en même temps juste à côté de moi. J'ai
+					aussi appris certaines règles d'UI grâce à ces artistes, ou encore
+					j'ai pu assister à la création de leur charte graphique.
+				</p>
+			</section>
+			<section class="productions">
+				<h2 class="project-heading">La maquette</h2>
+				<a
+					href="https://www.figma.com/proto/bKqUAO9QACp7bBJ0fhcqS7/Mister-Freeze?page-id=0%3A1&node-id=43-266&viewport=-2253%2C202%2C0.11&t=Ufkp9kpCKJwqa99e-1&scaling=min-zoom&content-scaling=fixed"
+					target="_blank">Voir la maquette sur Figma</a
+				>
+				<p>
+					La maquette n'est malheureusement pas finie ici car je n'ai pas pu le
+					faire par faute de temps, mais c'était un super exercice.
+				</p>
+			</section>
+		</main>
+	</body><Footer />
 </html>
 
 <style>
-  main {
-    display: flex;
-    flex-direction: column;
-    max-width: 1200px;
-    gap: var(--space-2xl);
-    box-sizing: border-box;
-    margin-top: 150px;
-  }
+	main {
+		display: flex;
+		flex-direction: column;
+		max-width: 1200px;
+		gap: var(--space-2xl);
+		box-sizing: border-box;
+		margin-top: 150px;
+	}
 
-  body {
-    background: var(--primary);
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    gap: var(--space-xl);
-  }
+	body {
+		background: var(--primary);
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		gap: var(--space-xl);
+	}
 
-  section {
-    padding: 0 var(--space-s-m);
-  }
+	section {
+		padding: 0 var(--space-s-m);
+	}
 
-  header {
-    display: flex;
-    width: 100%;
-    padding: 0 var(--space-s-m);
-    flex-direction: column;
-    gap: var(--space-s);
-  }
+	header {
+		display: flex;
+		width: 100%;
+		padding: 0 var(--space-s-m);
+		flex-direction: column;
+		gap: var(--space-s);
+	}
 
-  p {
-    color: var(--text-primary);
-    font-family: "Fibra One";
-    font-size: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
+	p {
+		color: var(--text-primary);
+		font-family: "Fibra One";
+		font-size: 20px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
 
-  a {
-    color: var(--text-primary);
-    font-family: "Fibra One";
-    font-size: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
+	a {
+		color: var(--text-primary);
+		font-family: "Fibra One";
+		font-size: 20px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
 
-  .hero {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 20px;
-  }
+	.hero {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		gap: 20px;
+	}
 
-  .photos {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-  }
+	.photos {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		gap: 20px;
+	}
 
-  .photo-bottom {
-    width: 100%;
-    height: auto;
-  }
+	.photo-bottom {
+		width: 100%;
+		height: auto;
+	}
 
-  .contexte,
-  .skills,
-  .productions {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
+	.contexte,
+	.skills,
+	.productions {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
 
-  .def {
-    width: 100%;
-    background: var(--secondary);
-  }
+	.def {
+		width: 100%;
+		background: var(--secondary);
+	}
 
-  .def__inner {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 20px;
-    padding: var(--space-s-m);
-  }
+	.def__inner {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		gap: 20px;
+		padding: var(--space-s-m);
+	}
 
-  @media screen and (max-width: 480px) {
-    main {
-      margin-top: 0;
-    }
-  }
+	@media screen and (max-width: 480px) {
+		main {
+			margin-top: 0;
+		}
+	}
 </style>

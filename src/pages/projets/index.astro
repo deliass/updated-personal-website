@@ -1,0 +1,370 @@
+---
+import BaseLayout from "../../layout/default.astro"
+import Contact from "../../components/Contact.astro"
+import ProjectCard from "../../components/ProjectCard.astro"
+import Breadcrumbs from "../../components/Breadcrumbs.astro"
+---
+
+<BaseLayout pageTitle="Projets">
+	<main>
+		<Breadcrumbs
+			items={[{ href: "/", label: "Accueil" }]}
+			current="Mes projets"
+		/>
+		<section class="intro">
+			<div class="title">
+				<h1>Mes projets</h1>
+				<img src="/assets/icons/project-h.svg" alt="" />
+			</div>
+			<div class="hero">
+				<p>
+					Ici, vous pourrez voir mes réalisations professionnelles, personnelles
+					et scolaires.
+				</p>
+			</div>
+		</section>
+		<section class="projects">
+			<div class="categories">
+				<div class="category-filter">
+					<h2>Catégories</h2>
+
+					<ul class="filter-list">
+						<li>
+							<button class="filter-btn active" data-filter="all">Tout</button>
+						</li>
+						<li>
+							<button class="filter-btn" data-filter="photographie"
+								>Photographie</button
+							>
+						</li>
+						<li>
+							<button class="filter-btn" data-filter="video">Vidéo</button>
+						</li>
+						<li>
+							<button class="filter-btn" data-filter="webdesign"
+								>Webdesign</button
+							>
+						</li>
+						<li>
+							<button class="filter-btn" data-filter="projet-ux"
+								>Projet UX</button
+							>
+						</li>
+						<li>
+							<button class="filter-btn" data-filter="design-graphique"
+								>Design graphique</button
+							>
+						</li>
+						<li>
+							<button class="filter-btn" data-filter="communication"
+								>Communication</button
+							>
+						</li>
+					</ul>
+				</div>
+				<img
+					src="/assets/icons/categories.svg"
+					alt=""
+					width="134"
+					height="135"
+				/>
+			</div>
+			<div class="gallery">
+				<ProjectCard
+					year="2026"
+					type="Webdesign"
+					category="Perso"
+					filterType="webdesign"
+					image="/assets/images/thumbnails/perso-homepage.png"
+					alt="Projet webdesign perso"
+					href="/wip"
+					buttonLabel="Voir le projet"
+				/>
+				<ProjectCard
+					year="2026"
+					type="Photo"
+					category="Scolaire"
+					filterType="photographie"
+					image="/assets/images/thumbnails/digital-event.png"
+					alt="Projet photo scolaire"
+					href="/projets/digital-event"
+					buttonLabel="Voir le projet"
+				/>
+				<ProjectCard
+					year="2026"
+					type="Vidéo"
+					category="Scolaire"
+					filterType="video"
+					image="/assets/images/thumbnails/patagonia.png"
+					alt="Projet vidéo scolaire"
+					href="/projets/patagonia"
+					buttonLabel="Voir le projet"
+				/>
+				<ProjectCard
+					year="2026"
+					type="Design"
+					category="Scolaire"
+					filterType="design-graphique"
+					image="/assets/images/thumbnails/totem.webp"
+					alt="Projet design scolaire"
+					href="/projets/totem"
+					buttonLabel="Voir le projet"
+				/>
+				<ProjectCard
+					year="2025-2026"
+					type="Communication"
+					category="Pro"
+					filterType="communication"
+					image="/assets/images/thumbnails/lca.svg"
+					alt="Projet communication professionnel"
+					href="/projets/lca"
+					buttonLabel="Voir le projet"
+				/>
+				<ProjectCard
+					year="2024-2026"
+					type="Design"
+					category="Perso"
+					filterType="design-graphique"
+					image="/assets/images/thumbnails/flo.jpg"
+					alt="Projet design personnel"
+					href="/projets/flo"
+					buttonLabel="Voir le projet"
+				/>
+				<ProjectCard
+					year="2025"
+					type="Webdesign"
+					filterType="webdesign"
+					category="Pro"
+					image="/assets/images/thumbnails/mister-freeze.png"
+					alt="Projet webdesign professionnel"
+					href="/projets/mister-freeze"
+					buttonLabel="Voir le projet"
+				/>
+				<ProjectCard
+					year="2025"
+					type="Projet UX"
+					category="Scolaire"
+					filterType="projet-ux"
+					image="/assets/images/thumbnails/culture-ux.jpg"
+					alt="Projet UX scolaire"
+					href="/projets/design-thinking"
+					buttonLabel="Voir le projet"
+				/>
+				<ProjectCard
+					year="2025"
+					type="Projet UX"
+					category="Scolaire"
+					filterType="projet-ux"
+					image="/assets/images/thumbnails/spiral-ux.jpg"
+					alt="Projet UX scolaire"
+					href="/projets/spiral-editions"
+					buttonLabel="Voir le projet"
+				/>
+				<ProjectCard
+					year="2025"
+					type="Vidéo"
+					category="Scolaire"
+					filterType="video"
+					image="/assets/images/thumbnails/optique.jpg"
+					alt="Projet vidéo scolaire"
+					href="/projets/optique-perignon"
+					buttonLabel="Voir le projet"
+				/>
+				<ProjectCard
+					year="2023"
+					type="Photo"
+					category="Scolaire"
+					filterType="photographie"
+					image="/assets/images/thumbnails/lbav.jpg"
+					alt="Projet photo scolaire"
+					href="/projets/friperie"
+					buttonLabel="Voir le projet"
+				/>
+				<ProjectCard
+					year="2022"
+					type="Photo"
+					category="Perso"
+					filterType="photographie"
+					image="/assets/images/thumbnails/st-jacques.JPG"
+					alt="Projet photo personnel"
+					href="/projets/photos-perso"
+					buttonLabel="Voir le projet"
+				/>
+			</div>
+		</section>
+		<Contact />
+	</main>
+</BaseLayout>
+
+<script>
+	const buttons = document.querySelectorAll<HTMLButtonElement>(".filter-btn")
+	const cards = document.querySelectorAll<HTMLElement>(".project-card")
+
+	buttons.forEach((button) => {
+		button.addEventListener("click", () => {
+			const filter = button.dataset.filter
+
+			buttons.forEach((btn) => btn.classList.remove("active"))
+			button.classList.add("active")
+
+			cards.forEach((card) => {
+				const cardType = card.dataset.type
+
+				if (filter === "all" || cardType === filter) {
+					card.style.display = ""
+				} else {
+					card.style.display = "none"
+				}
+			})
+		})
+	})
+</script>
+
+<style>
+	.hero {
+		display: flex;
+		width: fit-content;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.intro {
+		display: flex;
+		max-width: 1200px;
+		padding: 0 var(--space-s-m);
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: var(--space-s);
+	}
+
+	.intro p {
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	li {
+		color: var(--text-primary);
+		font-family: "Fibra One";
+		font-size: var(--step-0);
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+
+	.categories ul {
+		display: flex;
+		flex-direction: column;
+		row-gap: 10px;
+		list-style-type: none;
+	}
+
+	.categories {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 40px;
+		position: sticky;
+		height: fit-content;
+		top: 150px;
+	}
+
+	.category-filter {
+		display: flex;
+		flex-direction: column;
+		background-color: var(--secondary);
+		border-radius: 5px;
+		gap: var(--space-m-l);
+		padding: var(--space-s-m);
+	}
+
+	.filter-btn {
+		background: none;
+		border: none;
+		padding: 0;
+		font: inherit;
+		color: inherit;
+		cursor: pointer;
+		text-align: left;
+	}
+
+	.filter-btn.active {
+		text-decoration: underline;
+		text-underline-offset: 4px;
+	}
+
+	.projects {
+		display: grid;
+		grid-template-columns: 324px 1fr;
+		gap: 50px;
+		box-sizing: border-box;
+		align-items: start;
+	}
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: var(--space-m);
+		align-items: start;
+	}
+
+	.gallery a {
+		display: block;
+	}
+
+	@media (max-width: 480px) {
+		* img {
+			display: none;
+		}
+
+		main {
+			margin-top: 0;
+		}
+
+		.projects {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			padding: 0 10px;
+			gap: var(--space-s);
+		}
+
+		.gallery {
+			display: grid;
+			grid-template-columns: 1fr;
+		}
+		.categories {
+			background-color: var(--primary);
+			position: static;
+			padding: 0;
+			gap: 16px;
+		}
+
+		.categories ul {
+			display: flex;
+			flex-direction: row;
+			gap: 10px;
+			flex-wrap: wrap;
+		}
+
+		.category-filter {
+			background-color: var(--primary);
+			padding: 0;
+		}
+
+		.category-filter h2 {
+			display: none;
+		}
+
+		.filter-btn {
+			background-color: var(--secondary);
+			border-radius: 999px;
+			padding: var(--space-2xs);
+			text-decoration: none;
+		}
+
+		.filter-btn.active {
+			background-color: var(--text-primary);
+			color: var(--secondary);
+			text-decoration: none;
+		}
+	}
+</style>

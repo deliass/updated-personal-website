@@ -1,66 +1,66 @@
 ---
-import Button from "../components/Button.astro";
+import Button from "../components/Button.astro"
 ---
 
 <section class="contact">
-  <h2>Me contacter</h2>
-  <p>
-    Actuellement en poste, je suis en recherche d'une alternance pour la rentrée
-    26-27. Ça serait bête de se louper, alors <b>restons en contact</b> !
-  </p>
-  <div class="contact__assets">
-    <Button title="Me contacter" href="/portfolio/contact/" />
-    <img
-      src="/portfolio/assets/icons/contact.svg"
-      alt=""
-      width="106"
-      height="36"
-      aria-hidden="true"
-    />
-  </div>
+	<h2>Me contacter</h2>
+	<p>
+		Actuellement en poste, je suis en recherche d'une alternance pour la rentrée
+		26-27. Ça serait bête de se louper, alors <b>restons en contact</b> !
+	</p>
+	<div class="contact__assets">
+		<Button title="Me contacter" href="/contact/" />
+		<img
+			src="/assets/icons/contact.svg"
+			alt=""
+			width="106"
+			height="36"
+			aria-hidden="true"
+		/>
+	</div>
 </section>
 
 <style>
-  h2 {
-    color: var(--title);
-    font-family: "ABC Favorit Mono Edu";
-    font-size: var(--step-4);
-    margin: 0;
-  }
+	h2 {
+		color: var(--title);
+		font-family: "ABC Favorit Mono Edu";
+		font-size: var(--step-4);
+		margin: 0;
+	}
 
-  p {
-    color: var(--text-primary);
-    font-family: "Fibra One";
-    font-size: var(--step-0);
-    margin: 0;
-  }
+	p {
+		color: var(--text-primary);
+		font-family: "Fibra One";
+		font-size: var(--step-0);
+		margin: 0;
+	}
 
-  .contact {
-    display: flex;
-    flex-direction: column;
-    padding: var(--space-s-l);
-    gap: var(--space-s);
-    align-self: stretch;
-    background-color: var(--secondary);
-    border-radius: 10px;
-  }
+	.contact {
+		display: flex;
+		flex-direction: column;
+		padding: var(--space-s-l);
+		gap: var(--space-s);
+		align-self: stretch;
+		background-color: var(--secondary);
+		border-radius: 10px;
+	}
 
-  .contact__assets {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-self: stretch;
-    flex-wrap: wrap;
-  }
+	.contact__assets {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		align-self: stretch;
+		flex-wrap: wrap;
+	}
 
-  .contact__assets img {
-    max-width: 100%;
-    height: auto;
-  }
+	.contact__assets img {
+		max-width: 100%;
+		height: auto;
+	}
 
-  @media (max-width: 480px) {
-    * img {
-      display: none;
-    }
-  }
+	@media (max-width: 480px) {
+		* img {
+			display: none;
+		}
+	}
 </style>

@@ -1,6 +1,6 @@
 @font-face {
   font-family: "ABC Favorit Mono Edu";
-  src: url("/portfolio/assets/fonts/ABCFavoritMono-Bold.woff2") format("woff2");
+  src: url("/assets/fonts/ABCFavoritMono-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Fibra One";
-  src: url("/portfolio/assets/fonts/FibraOne-Regular.woff2") format("woff2");
+  src: url("/assets/fonts/FibraOne-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: "Fibra One";
-  src: url("/portfolio/assets/fonts/FibraOne-Bold.woff2") format("woff2");
+  src: url("/assets/fonts/FibraOne-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
   font-display: swap;

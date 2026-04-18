@@ -1,173 +1,170 @@
 ---
-import Nav from "../../components/Nav.astro";
-import Footer from "../../components/Footer.astro";
-import Button from "../../components/Button.astro";
-import Breadcrumbs from "../../components/Breadcrumbs.astro";
-import Head from "../../components/Head.astro";
+import Nav from "../../components/Nav.astro"
+import Footer from "../../components/Footer.astro"
+import Button from "../../components/Button.astro"
+import Breadcrumbs from "../../components/Breadcrumbs.astro"
+import Head from "../../components/Head.astro"
 ---
 
 <html lang="fr">
-  <Head />
-  <body>
-    <Nav />
-    <main>
-      <Breadcrumbs
-        items={[
-          { href: "/portfolio/", label: "Accueil" },
-          { href: "/portfolio/mes-projets", label: "Mes projets" },
-        ]}
-        current="Totem"
-      />
-      <header>
-        <h1 class="project-title">Projet design pour *Totem</h1>
-        <div class="hero">
-          <img
-            src="/portfolio/assets/images/projects/totem/totem-logo-NOIR.svg"
-            alt=""
-            width="100%"
-            height="200px"
-          />
-        </div>
-      </header>
-      <section class="def">
-        <div class="def__inner">
-          <p>
-            <b>*Totem :</b><br />Totem est une marque de kefir de fruits, une
-            boisson fermentée, pétillante et rafraîchissante. C’est un projet de
-            design graphique que j’ai réalisé dans le cadre de mes études à
-            l’ESD.
-          </p>
-          <a href="https://boutique.letotem.net/" target="_blank"
-            >Voir le site de la marque</a
-          >
-        </div>
-      </section>
-      <section class="contexte">
-        <h2 class="project-heading">Contexte</h2>
-        <p>
-          Dans le cadre de notre cours d'experimentation créative, nous avons
-          été challengé pour créer des étiquettes pour des bouteilles de kefir
-          de fruits. Tout le but se trouvait dans l'utilisation de l'IA dans
-          notre processus de création de la petite mascotte, la chouette.
-        </p>
-      </section>
-      <section class="skills">
-        <h2 class="project-heading">Compétences</h2>
-        <p>
-          Ici, j'ai utilisé Illustrator pour créer les étiquettes, et image
-          generator sur ChatGPT pour créer la chouette. J'ai d'abord fais un
-          travail de veille sur mes sites habituels, tels que Pinterest,
-          Behance, ou Comsos.so.
-        </p>
-      </section>
-      <section class="productions">
-        <h2 class="project-heading">Les rendus</h2>
-        <img
-          src="/portfolio/assets/images/projects/totem/etiquettes.svg"
-          alt=""
-        />
-        <p>Étiquettes colorées et déclinées en noir&blanc pour le client.</p>
-      </section>
-      <section class="presentation">
-        <h2 class="project-heading">Présentation</h2>
-        <p>Vous pouvez consulter la présentation du projet ici :</p>
-        <Button title="Télécharger ma présentation" pdfUrl="/TOTEM.pdf" />
-      </section>
-    </main>
-  </body><Footer />
+	<Head />
+	<body>
+		<Nav />
+		<main>
+			<Breadcrumbs
+				items={[
+					{ href: "/", label: "Accueil" },
+					{ href: "/projets", label: "Mes projets" },
+				]}
+				current="Totem"
+			/>
+			<header>
+				<h1 class="project-title">Projet design pour *Totem</h1>
+				<div class="hero">
+					<img
+						src="/assets/images/projects/totem/totem-logo-NOIR.svg"
+						alt=""
+						width="100%"
+						height="200px"
+					/>
+				</div>
+			</header>
+			<section class="def">
+				<div class="def__inner">
+					<p>
+						<b>*Totem :</b><br />Totem est une marque de kefir de fruits, une
+						boisson fermentée, pétillante et rafraîchissante. C’est un projet de
+						design graphique que j’ai réalisé dans le cadre de mes études à
+						l’ESD.
+					</p>
+					<a href="https://boutique.letotem.net/" target="_blank"
+						>Voir le site de la marque</a
+					>
+				</div>
+			</section>
+			<section class="contexte">
+				<h2 class="project-heading">Contexte</h2>
+				<p>
+					Dans le cadre de notre cours d'experimentation créative, nous avons
+					été challengé pour créer des étiquettes pour des bouteilles de kefir
+					de fruits. Tout le but se trouvait dans l'utilisation de l'IA dans
+					notre processus de création de la petite mascotte, la chouette.
+				</p>
+			</section>
+			<section class="skills">
+				<h2 class="project-heading">Compétences</h2>
+				<p>
+					Ici, j'ai utilisé Illustrator pour créer les étiquettes, et image
+					generator sur ChatGPT pour créer la chouette. J'ai d'abord fais un
+					travail de veille sur mes sites habituels, tels que Pinterest,
+					Behance, ou Comsos.so.
+				</p>
+			</section>
+			<section class="productions">
+				<h2 class="project-heading">Les rendus</h2>
+				<img src="/assets/images/projects/totem/etiquettes.svg" alt="" />
+				<p>Étiquettes colorées et déclinées en noir&blanc pour le client.</p>
+			</section>
+			<section class="presentation">
+				<h2 class="project-heading">Présentation</h2>
+				<p>Vous pouvez consulter la présentation du projet ici :</p>
+				<Button title="Télécharger ma présentation" pdfUrl="/TOTEM.pdf" />
+			</section>
+		</main>
+	</body><Footer />
 </html>
 
 <style>
-  main {
-    display: flex;
-    flex-direction: column;
-    max-width: 1200px;
-    gap: var(--space-2xl);
-    box-sizing: border-box;
-    margin-top: 150px;
-  }
+	main {
+		display: flex;
+		flex-direction: column;
+		max-width: 1200px;
+		gap: var(--space-2xl);
+		box-sizing: border-box;
+		margin-top: 150px;
+	}
 
-  body {
-    background: var(--primary);
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    gap: var(--space-xl);
-  }
+	body {
+		background: var(--primary);
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		gap: var(--space-xl);
+	}
 
-  section {
-    padding: 0 var(--space-s-m);
-  }
+	section {
+		padding: 0 var(--space-s-m);
+	}
 
-  header {
-    display: flex;
-    width: 100%;
-    padding: 0 var(--space-s-m);
-    flex-direction: column;
-    gap: var(--space-s);
-  }
+	header {
+		display: flex;
+		width: 100%;
+		padding: 0 var(--space-s-m);
+		flex-direction: column;
+		gap: var(--space-s);
+	}
 
-  p {
-    color: var(--text-primary);
-    font-family: "Fibra One";
-    font-size: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
+	p {
+		color: var(--text-primary);
+		font-family: "Fibra One";
+		font-size: 20px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
 
-  a {
-    color: var(--text-primary);
-    font-family: "Fibra One";
-    font-size: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
+	a {
+		color: var(--text-primary);
+		font-family: "Fibra One";
+		font-size: 20px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
 
-  .hero {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 20px;
-  }
+	.hero {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		gap: 20px;
+	}
 
-  .photos {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-  }
+	.photos {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		gap: 20px;
+	}
 
-  .photo-bottom {
-    width: 100%;
-    height: auto;
-  }
+	.photo-bottom {
+		width: 100%;
+		height: auto;
+	}
 
-  .contexte,
-  .skills,
-  .productions,
-  .presentation {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
+	.contexte,
+	.skills,
+	.productions,
+	.presentation {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
 
-  .def {
-    width: 100%;
-    background: var(--secondary);
-  }
+	.def {
+		width: 100%;
+		background: var(--secondary);
+	}
 
-  .def__inner {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 20px;
-    padding: var(--space-s-m);
-  }
+	.def__inner {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		gap: 20px;
+		padding: var(--space-s-m);
+	}
 
-  @media screen and (max-width: 480px) {
-    main {
-      margin-top: 0;
-    }
-  }
+	@media screen and (max-width: 480px) {
+		main {
+			margin-top: 0;
+		}
+	}
 </style>

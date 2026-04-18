@@ -1,193 +1,193 @@
 ---
-import Nav from "../../components/Nav.astro";
-import Footer from "../../components/Footer.astro";
-import Breadcrumbs from "../../components/Breadcrumbs.astro";
-import Head from "../../components/Head.astro";
+import Nav from "../../components/Nav.astro"
+import Footer from "../../components/Footer.astro"
+import Breadcrumbs from "../../components/Breadcrumbs.astro"
+import Head from "../../components/Head.astro"
 ---
 
 <html lang="fr">
-  <Head />
-  <body>
-    <Nav />
-    <main>
-      <Breadcrumbs
-        items={[
-          { href: "/portfolio/", label: "Accueil" },
-          { href: "/portfolio/mes-projets", label: "Mes projets" },
-        ]}
-        current="Les Belles Années Vintage"
-      />
-      <header>
-        <h1 class="project-title">
-          Projet photo pour *Les Belles Années Vintage
-        </h1>
-        <div class="hero">
-          <img src="/portfolio/assets/images/projects/lbav/hero.jpg" alt="" />
-        </div>
-      </header>
-      <section class="def">
-        <div class="def__inner">
-          <p>
-            <b>*Les Belles Années Vintage :</b><br />"Boutique atelier” vintage
-            et toulousaine. Désormais fermée, Sonia avait créée cette friperie
-            vintage au cœur des Carmes. Là-bas on pouvait assister à divers
-            ateliers créatifs et de coutures, afin de confectionner ou réparer
-            ses propores pièces.
-          </p>
-        </div>
-      </section>
-      <section class="contexte">
-        <h2 class="project-heading">Contexte</h2>
-        <p>
-          Nous devions booster la présence de Sonia sur Instagram, pour cela,
-          nous devions faire des photos d'une mannequin portant les pièces de la
-          boutique. L'intention et la production était libre, mais nous devions
-          nous aligner aux valeurs de Sonia.
-        </p>
-      </section>
-      <section class="skills">
-        <h2 class="project-heading">Compétences</h2>
-        <p>
-          J’ai eu l’occasion de tester la photographie de manière plus engagée,
-          définie, que je ne le faisais pour moi. J'ai pu toucher à Light
-          Classroom Classic, et pu pratiquer du matériel professionnel.
-        </p>
-      </section>
-      <section class="productions">
-        <h2 class="project-heading">Productions</h2>
-        <p>Voici les photos que j'ai prises et retouchées :</p>
-        <div class="photos">
-          <img
-            src="/portfolio/assets/images/projects/lbav/1.jpg"
-            alt=""
-            class="photo-bottom"
-          />
-          <img
-            src="/portfolio/assets/images/projects/lbav/2.jpg"
-            alt=""
-            class="photo-bottom"
-          />
-        </div>
-        <p>
-          Je vous invite aussi à consulter la présentation finale, pour
-          découvrir notre argumentation :
-        </p>
-        <div
-          style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+	<Head />
+	<body>
+		<Nav />
+		<main>
+			<Breadcrumbs
+				items={[
+					{ href: "/", label: "Accueil" },
+					{ href: "/projets", label: "Mes projets" },
+				]}
+				current="Les Belles Années Vintage"
+			/>
+			<header>
+				<h1 class="project-title">
+					Projet photo pour *Les Belles Années Vintage
+				</h1>
+				<div class="hero">
+					<img src="/assets/images/projects/lbav/hero.jpg" alt="" />
+				</div>
+			</header>
+			<section class="def">
+				<div class="def__inner">
+					<p>
+						<b>*Les Belles Années Vintage :</b><br />"Boutique atelier” vintage
+						et toulousaine. Désormais fermée, Sonia avait créée cette friperie
+						vintage au cœur des Carmes. Là-bas on pouvait assister à divers
+						ateliers créatifs et de coutures, afin de confectionner ou réparer
+						ses propores pièces.
+					</p>
+				</div>
+			</section>
+			<section class="contexte">
+				<h2 class="project-heading">Contexte</h2>
+				<p>
+					Nous devions booster la présence de Sonia sur Instagram, pour cela,
+					nous devions faire des photos d'une mannequin portant les pièces de la
+					boutique. L'intention et la production était libre, mais nous devions
+					nous aligner aux valeurs de Sonia.
+				</p>
+			</section>
+			<section class="skills">
+				<h2 class="project-heading">Compétences</h2>
+				<p>
+					J’ai eu l’occasion de tester la photographie de manière plus engagée,
+					définie, que je ne le faisais pour moi. J'ai pu toucher à Light
+					Classroom Classic, et pu pratiquer du matériel professionnel.
+				</p>
+			</section>
+			<section class="productions">
+				<h2 class="project-heading">Productions</h2>
+				<p>Voici les photos que j'ai prises et retouchées :</p>
+				<div class="photos">
+					<img
+						src="/assets/images/projects/lbav/1.jpg"
+						alt=""
+						class="photo-bottom"
+					/>
+					<img
+						src="/assets/images/projects/lbav/2.jpg"
+						alt=""
+						class="photo-bottom"
+					/>
+				</div>
+				<p>
+					Je vous invite aussi à consulter la présentation finale, pour
+					découvrir notre argumentation :
+				</p>
+				<div
+					style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
  padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
  border-radius: 8px; will-change: transform;"
-        >
-          <iframe
-            loading="lazy"
-            style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-            src="https://www.canva.com/design/DAF22Nh1O2g/u19uFxYNvAxA9FeTEuEgRQ/view?embed"
-            allowfullscreen="allowfullscreen"
-            allow="fullscreen"
-          >
-          </iframe>
-        </div>
-        <a
-          href="https://www.canva.com/design/DAF22Nh1O2g/u19uFxYNvAxA9FeTEuEgRQ/view?utm_content=DAF22Nh1O2g&utm_campaign=designshare&utm_medium=embeds&utm_source=link"
-          target="_blank"
-          rel="noopener"></a>
-      </section>
-    </main>
-  </body><Footer />
+				>
+					<iframe
+						loading="lazy"
+						style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+						src="https://www.canva.com/design/DAF22Nh1O2g/u19uFxYNvAxA9FeTEuEgRQ/view?embed"
+						allowfullscreen="allowfullscreen"
+						allow="fullscreen"
+					>
+					</iframe>
+				</div>
+				<a
+					href="https://www.canva.com/design/DAF22Nh1O2g/u19uFxYNvAxA9FeTEuEgRQ/view?utm_content=DAF22Nh1O2g&utm_campaign=designshare&utm_medium=embeds&utm_source=link"
+					target="_blank"
+					rel="noopener"></a>
+			</section>
+		</main>
+	</body><Footer />
 </html>
 
 <style>
-  main {
-    display: flex;
-    flex-direction: column;
-    max-width: 1200px;
-    gap: var(--space-2xl);
-    box-sizing: border-box;
-    margin-top: 150px;
-  }
+	main {
+		display: flex;
+		flex-direction: column;
+		max-width: 1200px;
+		gap: var(--space-2xl);
+		box-sizing: border-box;
+		margin-top: 150px;
+	}
 
-  body {
-    background: var(--primary);
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    gap: var(--space-xl);
-  }
+	body {
+		background: var(--primary);
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		gap: var(--space-xl);
+	}
 
-  header {
-    display: flex;
-    width: 100%;
-    padding: 0 var(--space-s-m);
-    flex-direction: column;
-    gap: var(--space-s);
-  }
+	header {
+		display: flex;
+		width: 100%;
+		padding: 0 var(--space-s-m);
+		flex-direction: column;
+		gap: var(--space-s);
+	}
 
-  p {
-    color: var(--text-primary);
-    font-family: "Fibra One";
-    font-size: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
+	p {
+		color: var(--text-primary);
+		font-family: "Fibra One";
+		font-size: 20px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
 
-  a {
-    color: var(--text-primary);
-    font-family: "Fibra One";
-    font-size: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
+	a {
+		color: var(--text-primary);
+		font-family: "Fibra One";
+		font-size: 20px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
 
-  section {
-    padding: 0 var(--space-s-m);
-  }
+	section {
+		padding: 0 var(--space-s-m);
+	}
 
-  .hero {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 20px;
-  }
+	.hero {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		gap: 20px;
+	}
 
-  .photos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
+	.photos {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 20px;
+	}
 
-  .photo-bottom {
-    height: 100%;
-    width: 100%;
-  }
+	.photo-bottom {
+		height: 100%;
+		width: 100%;
+	}
 
-  .contexte,
-  .skills,
-  .productions {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
+	.contexte,
+	.skills,
+	.productions {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
 
-  .def {
-    width: 100%;
-    background: var(--secondary);
-  }
+	.def {
+		width: 100%;
+		background: var(--secondary);
+	}
 
-  .def__inner {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 20px;
-    padding: var(--space-s-m);
-  }
+	.def__inner {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		gap: 20px;
+		padding: var(--space-s-m);
+	}
 
-  @media screen and (max-width: 480px) {
-    main {
-      margin-top: 0;
-    }
+	@media screen and (max-width: 480px) {
+		main {
+			margin-top: 0;
+		}
 
-    .photos {
-      flex-direction: column;
-    }
-  }
+		.photos {
+			flex-direction: column;
+		}
+	}
 </style>
