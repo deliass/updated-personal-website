@@ -1,10 +1,10 @@
 ---
-const { title, type, link, pdfUrl, id } = Astro.props;
+const { title, type, href, pdfUrl, id } = Astro.props;
 ---
 
 <a
   class:list={["button", type]}
-  href={pdfUrl || link}
+  href={pdfUrl || href}
   download={pdfUrl ? true : undefined}
   id={id ? id : ""}
 >

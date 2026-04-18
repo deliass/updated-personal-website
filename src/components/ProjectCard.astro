@@ -24,16 +24,14 @@ const {
 } = Astro.props;
 ---
 
-<a href={href}>
-  <article class="project-card" data-type={filterType}>
-    <img src={image} alt={alt} class="project-card__image" />
-    <div class="project-card__content">
-      <p class="project-card__meta">{type} • {category}</p>
-      <p class="project-card__year">{year}</p>
-      <button type="button">Voir le projet</button>
-    </div>
-  </article>
-</a>
+<article class="project-card" data-type={filterType}>
+  <img src={image} alt={alt} class="project-card__image" />
+  <div class="project-card__content">
+    <p class="project-card__meta">{type} • {category}</p>
+    <p class="project-card__year">{year}</p>
+    <Button title={buttonLabel} href={href} />
+  </div>
+</article>
 
 <style>
   button {
