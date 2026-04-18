@@ -8,34 +8,24 @@ import Head from "../components/Head.astro";
 <html lang="fr">
   <Head />
   <body>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="generator" content={Astro.generator} />
-    <link rel="stylesheet" href="/src/style/fonts.css" />
-    <link rel="stylesheet" href="/src/style/variables.css" />
-    <title>Nélia Figuerola</title>
-
-    <body>
-      <Nav />
-      <main>
-        <header>
-          <h1 class="project-title">Page en construction</h1>
-          <p>
-            Cette page est actuellement en construction, elle sera bientôt
-            disponible !
-          </p>
-          <Button title="Retour" href="#" id="back" />
-          <script>
-            document.getElementById("back")?.addEventListener("click", () => {
-              history.back();
-              console.log("click");
-            });
-          </script>
-        </header>
-      </main>
-      <Footer />
-    </body>
+    <Nav />
+    <main>
+      <header>
+        <h1 class="project-title">Page en construction</h1>
+        <p>
+          Cette page est actuellement en construction, elle sera bientôt
+          disponible !
+        </p>
+        <Button title="Retour" href="#" id="back" />
+        <script>
+          document.getElementById("back")?.addEventListener("click", () => {
+            history.back();
+            console.log("click");
+          });
+        </script>
+      </header>
+    </main>
+    <Footer />
   </body>
 </html>
 
