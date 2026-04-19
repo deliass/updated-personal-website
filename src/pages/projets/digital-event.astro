@@ -1,175 +1,116 @@
 ---
-import Nav from "../../components/Nav.astro"
-import Footer from "../../components/Footer.astro"
-import Breadcrumbs from "../../components/Breadcrumbs.astro"
-import Head from "../../components/Head.astro"
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import Head from "../../components/Head.astro";
+import BaseLayout from "../../layout/default.astro";
 ---
 
-<html lang="fr">
-	<Head />
-	<body>
-		<Nav />
-		<main>
-			<Breadcrumbs
-				items={[
-					{ href: "/", label: "Accueil" },
-					{ href: "/projets", label: "Mes projets" },
-				]}
-				current="Digital Event"
-			/>
-			<header>
-				<h1 class="project-title">Projet photo *Digital Event 2026</h1>
-				<div class="hero">
-					<img
-						src="/assets/images/projects/digital-event/digital-event.png"
-						alt=""
-					/>
-				</div>
-			</header>
-			<section class="def">
-				<div class="def__inner">
-					<p>
-						<b>*Digital Event :</b><br />Événement phare de l’ESD, ce projet de
-						2 semaines réunit chaque année les étudiants de l’école répartis
-						dans différents ateliers pour imaginer et concevoir des dispositifs
-						interactifs.
-					</p>
-					<a
-						href="https://ecole-du-digital.com/lecole/le-digital-event/"
-						target="_blank">En lire plus sur le site de mon école</a
-					>
-				</div>
-			</section>
-			<section class="contexte">
-				<h2 class="project-heading">Contexte</h2>
-				<p>
-					Cette année, l’évènement nous demandait d’exercer sur la thématique du
-					cinéma. Je ne peux pas dire que je suis une cinéphile, certes, mais je
-					ne peux que conseiller de regarder <a
-						href="https://fr.wikipedia.org/wiki/Midsommar_(film)"
-						target="_blank">Midsommar</a
-					> ! <br />
-					Ce film est, à mes yeux, un chef d’œuvre artistique, une nouvelle manière
-					d’aborder l’horreur, dans des couleurs plus gaies, en plein jour, avec des
-					personnes qui ont l’air si attachante, avec une atmosphère si détendue...
-					Alors, il était pour moi évident de photographier sur ce film, et surtout,
-					sur ma scène préférée. <br />
-					Pour m’aider à justifier mon choix, nous avions décidé de photographier
-					des scènes de films, existantes ou non. Nos scènes devaient représenter
-					le doute. Que ce soit lors de la réflexion, lors de la prise de décision,
-					ou bien après la décision/l’acte.
-				</p>
-			</section>
-			<section class="skills">
-				<h2 class="project-heading">Compétences</h2>
-				<p>
-					J’ai eu l’occasion de m’essayer sur Adobe Lightroom Classic, que j’ai
-					trouvé extrêmement intuitif. Mais pour parler plus technique, j’ai pu
-					aussi redécouvrir le réglage photo, la mise en place de lumières, la
-					construction de mon décor de photo, mais aussi la scénographie de
-					notre atelier, à l’école.
-				</p>
-			</section>
-			<section class="also">
-				<h2 class="project-heading">J'apparais aussi ici...</h2>
-				<img
-					src="/assets/images/projects/digital-event/photo-noa.png"
-					alt=""
-					class="photo-bottom"
-				/>
-				<p>Inspirée de Pearl et Maxxxine, photo prise par @noharrttt_ .</p>
-			</section>
-		</main>
-	</body><Footer />
-</html>
+<BaseLayout pageTitle="Digital Event">
+  <Head />
+  <Breadcrumbs
+    items={[
+      { href: "/", label: "Accueil" },
+      { href: "/projets", label: "Mes projets" },
+    ]}
+    current="Digital Event"
+  />
+  <section class="intro">
+    <h1 class="project-title">Projet photo *Digital Event 2026</h1>
+
+    <img src="/assets/images/projects/digital-event/digital-event.png" alt="" />
+  </section>
+  <section class="def">
+    <div class="def__inner">
+      <p>
+        <b>*Digital Event :</b><br />Événement phare de l’ESD, ce projet de 2
+        semaines réunit chaque année les étudiants de l’école répartis dans
+        différents ateliers pour imaginer et concevoir des dispositifs
+        interactifs.
+      </p>
+      <a
+        href="https://ecole-du-digital.com/lecole/le-digital-event/"
+        target="_blank">En lire plus sur le site de mon école</a
+      >
+    </div>
+  </section>
+  <section class="contexte">
+    <h2 class="project-heading">Contexte</h2>
+    <p>
+      Cette année, l’évènement nous demandait d’exercer sur la thématique du
+      cinéma. Je ne peux pas dire que je suis une cinéphile, certes, mais je ne
+      peux que conseiller de regarder <a
+        href="https://fr.wikipedia.org/wiki/Midsommar_(film)"
+        target="_blank">Midsommar</a
+      > ! <br />
+      Ce film est, à mes yeux, un chef d’œuvre artistique, une nouvelle manière d’aborder
+      l’horreur, dans des couleurs plus gaies, en plein jour, avec des personnes qui
+      ont l’air si attachante, avec une atmosphère si détendue... Alors, il était
+      pour moi évident de photographier sur ce film, et surtout, sur ma scène préférée.
+      <br />
+      Pour m’aider à justifier mon choix, nous avions décidé de photographier des
+      scènes de films, existantes ou non. Nos scènes devaient représenter le doute.
+      Que ce soit lors de la réflexion, lors de la prise de décision, ou bien après
+      la décision/l’acte.
+    </p>
+  </section>
+  <section class="skills">
+    <h2 class="project-heading">Compétences</h2>
+    <p>
+      J’ai eu l’occasion de m’essayer sur Adobe Lightroom Classic, que j’ai
+      trouvé extrêmement intuitif. Mais pour parler plus technique, j’ai pu
+      aussi redécouvrir le réglage photo, la mise en place de lumières, la
+      construction de mon décor de photo, mais aussi la scénographie de notre
+      atelier, à l’école.
+    </p>
+  </section>
+  <section class="also">
+    <h2 class="project-heading">J'apparais aussi ici...</h2>
+    <img
+      src="/assets/images/projects/digital-event/photo-noa.png"
+      alt=""
+      class="photo-bottom"
+    />
+    <p>Inspirée de Pearl et Maxxxine, photo prise par @noharrttt_ .</p>
+  </section>
+</BaseLayout>
 
 <style>
-	main {
-		display: flex;
-		flex-direction: column;
-		max-width: 1200px;
-		gap: var(--space-2xl);
-		box-sizing: border-box;
-		margin-top: 150px;
-	}
+  section {
+    padding: 0 var(--space-s-m);
+  }
 
-	body {
-		background: var(--primary);
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		justify-content: center;
-		gap: var(--space-xl);
-	}
+  .intro {
+    display: flex;
+    width: 100%;
+    gap: var(--space-2xs);
+  }
 
-	section {
-		padding: 0 var(--space-s-m);
-	}
+  .photos {
+    display: flex;
+    width: 100%;
+  }
 
-	header {
-		display: flex;
-		width: 100%;
-		padding: 0 var(--space-s-m);
-		flex-direction: column;
-		gap: var(--space-s);
-	}
+  .photo-bottom {
+    width: 100%;
+  }
 
-	p {
-		color: var(--text-primary);
-		font-family: "Fibra One";
-		font-size: var(--step-0);
-		margin-top: 0px;
-		margin-bottom: 0px;
-	}
+  .contexte,
+  .skills,
+  .also {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
 
-	a {
-		color: var(--text-primary);
-		font-family: "Fibra One";
-		font-size: var(--step-0);
-		margin-top: 0px;
-		margin-bottom: 0px;
-	}
+  .def {
+    width: 100%;
+    background: var(--secondary);
+  }
 
-	.hero {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		gap: var(--space-2xs);
-	}
-
-	.photos {
-		display: flex;
-		width: 100%;
-	}
-
-	.photo-bottom {
-		width: 100%;
-	}
-
-	.contexte,
-	.skills,
-	.also {
-		display: flex;
-		flex-direction: column;
-		gap: 30px;
-	}
-
-	.def {
-		width: 100%;
-		background: var(--secondary);
-	}
-
-	.def__inner {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		gap: 20px;
-		padding: var(--space-s-m);
-	}
-
-	@media screen and (max-width: 480px) {
-		main {
-			margin-top: 0;
-		}
-	}
+  .def__inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    padding: var(--space-s-m);
+  }
 </style>

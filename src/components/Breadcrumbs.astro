@@ -1,5 +1,7 @@
 ---
 const { items, current } = Astro.props;
+
+if (!items || !current) return;
 ---
 
 <nav aria-label="Breadcrumb" class="breadcrumb">
@@ -10,7 +12,7 @@ const { items, current } = Astro.props;
           <li>
             <a href={item.href}>{item.label}</a>
           </li>
-          {index < items.length && (
+          {index < items.length - 1 && (
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="25px"

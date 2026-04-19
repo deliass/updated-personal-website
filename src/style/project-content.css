@@ -1,0 +1,52 @@
+@import "../../src/style/style.css";
+
+
+.project-page {
+	display: flex;
+	gap: var(--space-l);
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-l);
+}
+
+.project-markdown {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-l);
+}
+
+.project-intro {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-l);
+}
+
+.project-intro p {
+	background-color: var(--secondary);
+	padding: var(--space-m)
+}
+
+li, a {
+	color: var(--text-primary);
+}
+
+.project-intro__image {
+	width: 100%;
+}
+
+.productions__inner {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: var(--space-s);
+	justify-content: center;
+}
+
+.photos {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: var(--space-s);
+}

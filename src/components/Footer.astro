@@ -3,77 +3,85 @@
 ---
 
 <footer>
-	<div class="plan">
-		<h3>Navigation</h3>
-		<ul>
-			<li><a href="/">Accueil</a></li>
-			<li><a href="/a-propos/">À propos</a></li>
-			<li><a href="/projets">Mes projets</a></li>
-			<li><a href="/inspirations">Inspirations</a></li>
-			<li><a href="/contact/">Contact</a></li>
-		</ul>
-	</div>
-	<div class="social">
-		<h3>Réseaux sociaux</h3>
-		<ul>
-			<li>
-				<a href="https://www.instagram.com/dalios.web/" target="_blank"
-					>Instagram</a
-				>
-			</li>
-			<li>
-				<a href="https://www.linkedin.com/in/nelia-figuerola/" target="_blank"
-					>LinkedIn</a
-				>
-			</li>
-		</ul>
-	</div>
-	<div class="mentions">
-		<h3>Mentions</h3>
-		<ul><li><a href="/mentions-legales">Mentions légales</a></li></ul>
-	</div>
+  <div class="plan">
+    <h3>Navigation</h3>
+    <ul>
+      <li><a href="/">Accueil</a></li>
+      <li><a href="/a-propos/">À propos</a></li>
+      <li><a href="/projets">Mes projets</a></li>
+      <li><a href="/inspirations">Inspirations</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
+  </div>
+  <div class="social">
+    <h3>Réseaux sociaux</h3>
+    <ul>
+      <li>
+        <a href="https://www.instagram.com/dalios.web/" target="_blank"
+          >Instagram</a
+        >
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/nelia-figuerola/" target="_blank"
+          >LinkedIn</a
+        >
+      </li>
+    </ul>
+  </div>
+  <div class="mentions">
+    <h3>Mentions</h3>
+    <ul><li><a href="/mentions-legales">Mentions légales</a></li></ul>
+  </div>
 </footer>
 
 <style>
-	footer {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		width: 100%;
-		padding: var(--space-xl);
-		border-radius: 30px;
-		background: var(--secondary);
-		gap: var(--space-s-m);
-	}
+  footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    padding: var(--space-xl);
+    border-radius: 30px;
+    background: var(--secondary);
+    gap: var(--space-s-m);
+  }
 
-	@media (max-width: 480px) {
-		footer {
-			display: grid;
-			grid-template-columns: repeat(1, 1fr);
-		}
-	}
+  .plan,
+  .social,
+  .mentions {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-s-m);
+  }
 
-	h3 {
-		color: var(--title);
-		font-family: "ABC Favorit Mono Edu";
-		font-size: var(--step-3);
-		text-align: center;
-	}
+  @media (max-width: 480px) {
+    footer {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
 
-	a {
-		color: var(--text-primary);
-		font-family: "Fibra One";
-		font-size: var(--step-0);
-		font-weight: bold;
-		text-decoration: none;
-	}
+  h3 {
+    color: var(--title);
+    font-family: "ABC Favorit Mono Edu";
+    font-size: var(--step-3);
+    text-align: center;
+  }
 
-	ul {
-		display: flex;
-		flex-direction: column;
-		gap: var(--space-3xs);
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		text-align: center;
-	}
+  a {
+    color: var(--text-primary);
+    font-family: "Fibra One";
+    font-size: var(--step-0);
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3xs);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
 </style>

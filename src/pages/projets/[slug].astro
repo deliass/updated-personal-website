@@ -1,30 +1,47 @@
 ---
-import BaseLayout from "../../layout/default.astro"
-import { getCollection, render } from "astro:content"
+import BaseLayout from "../../layout/default.astro";
+import { getCollection, render } from "astro:content";
+import "../../style/project-content.css";
+import Button from "../../components/Button.astro";
 
 export async function getStaticPaths() {
-	const posts = await getCollection("projects")
-	return posts.map((post) => ({
-		params: { slug: post.id },
-		props: { post },
-	}))
+  const projects = await getCollection("projects");
+  return projects.map((project) => ({
+    params: { slug: project.data.slug },
+    props: { project },
+  }));
 }
 
-const { post } = Astro.props
-const { Content } = await render(post)
+const { project } = Astro.props;
+const { Content } = await render(project);
 ---
 
-<BaseLayout pageTitle={post.data.title}>
-	<section class="intro">
-		<h1>{post.data.title}</h1>
-		<img src={post.data.image} alt="" />
-		<p>{post.data.description}</p>
+<BaseLayout pageTitle={project.data.title}>
+  <main class="project-page">
+    <section class="project-intro">
+      <h1>{project.data.title}</h1>
 
-		{
-			post.data.externalLink && (
-				<a href={post.data.externalLink}>{post.data.externalText}</a>
-			)
-		}
-	</section>
-	<Content />
+      {
+        project.data.image && (
+          <img
+            class="project-intro__image"
+            src={project.data.image}
+            alt={project.data.title}
+          />
+        )
+      }
+
+      {
+        project.data.description && (
+          <p>
+            {project.data.description}{" "}
+            <a href={project.data.externalLink}>{project.data.externalText}</a>
+          </p>
+        )
+      }
+    </section>
+    <article class="project-markdown">
+      <Content />
+    </article>
+  </main>
 </BaseLayout>

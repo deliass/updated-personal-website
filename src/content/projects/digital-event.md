@@ -1,11 +1,14 @@
 ---
 title: Projet photo Digital Event 2026
-slug: digital-event-2026
+slug: "digital-event-2026"
+type: Scolaire
+category: Photo
+filterType: photo
 image: /assets/images/projects/digital-event/digital-event.png
 description: "Digital Event : Événement phare de l’ESD, ce projet de 2 semaines réunit chaque année les étudiants de l’école répartis dans différents ateliers pour imaginer et concevoir des dispositifs interactifs."
-externalLink: https://ecole-du-digital.com/lecole/le-digital-event/
-externalText: En lire plus sur le site de mon école
-pubDate: 05-02-2026
+externalLink: "https://ecole-du-digital.com/lecole/le-digital-event/"
+externalText: "En lire plus sur le site de mon école"
+year: "2026"
 ---
 
 ## Contexte

@@ -1,288 +1,184 @@
 ---
-import Button from "../components/Button.astro"
-import Nav from "../components/Nav.astro"
-import Footer from "../components/Footer.astro"
-import Contact from "../components/Contact.astro"
-import Breadcrumbs from "../components/Breadcrumbs.astro"
-import Head from "../components/Head.astro"
+import Button from "../components/Button.astro";
+import Footer from "../components/Footer.astro";
+import Contact from "../components/Contact.astro";
+import Default from "../layout/default.astro";
 ---
 
-<html lang="fr">
-	<Head />
-	<body>
-		<Nav />
-		<main>
-			<Breadcrumbs
-				items={[{ href: "/", label: "Accueil" }]}
-				current="À propos"
-			/>
-			<header>
-				<div class="title">
-					<h1>Ce qu'il faut savoir sur moi</h1>
-					<img src="/assets/icons/about-h.svg" alt="" />
-				</div>
-				<div class="hero">
-					<p>
-						Étudiante en webdesign et création de contenus web & réseaux
-						sociaux., j'aime les projets qui ont un vrai usage, et je fais
-						attention à l'impact de ce que je conçois (accessibilité et
-						conception consciente, dès le départ).
-					</p>
-					<h3>Ce qui me guide</h3>
-					<p>
-						Je défends un numérique inclusif : si c'est beau mais inutilisable,
-						ça ne m'intéresse pas. Je vise des solutions sobres, cohérentes, et
-						faciles à prendre en main.
-					</p>
-					<h3>Ce qui me motive</h3>
-					<p>
-						Comprendre le besoin réel, poser les bonnes questions, puis
-						construire proprement : contenu, structure, UX, UI, SEO.
-					</p>
-				</div>
-			</header>
-			<section class="few-words">
-				<h2>En quelques mots</h2>
-				<p>
-					J'aime me décrire comme une grande curieuse. La polyvalence et la
-					prise de décision me plaisent. J'apprécie autant le travail d'équipe
-					qu'en autonomie, l'ambiance scolaire que la vie professionnelle. Ce
-					que je préfère : découvrir et redécouvrir ce qui m'anime dans le
-					digital.
-				</p>
-				<div class="cta">
-					<Button title="Découvrir mes projets" href="/mes-projets/" />
-					<img src="/assets/icons/star1.svg" alt="" width="46" height="61" />
-				</div>
-			</section>
-			<section class="parkour">
-				<div class="parkour_inner">
-					<div class="title_parkour">
-						<h2>Mon parcours professionnel</h2>
-						<img src="/assets/icons/star2.svg" alt="" width="78" height="68" />
-					</div>
+<Default pageTitle="À propos">
+  <div class="hero">
+    <div class="title">
+      <h1>Ce qu'il faut savoir sur moi</h1>
+      <img src="/assets/icons/about-h.svg" alt="" />
+    </div>
+    <p>
+      Étudiante en webdesign et création de contenus web & réseaux sociaux.,
+      j'aime les projets qui ont un vrai usage, et je fais attention à l'impact
+      de ce que je conçois (accessibilité et conception consciente, dès le
+      départ).
+    </p>
+    <h3>Ce qui me guide</h3>
+    <p>
+      Je défends un numérique inclusif : si c'est beau mais inutilisable, ça ne
+      m'intéresse pas. Je vise des solutions sobres, cohérentes, et faciles à
+      prendre en main.
+    </p>
+    <h3>Ce qui me motive</h3>
+    <p>
+      Comprendre le besoin réel, poser les bonnes questions, puis construire
+      proprement : contenu, structure, UX, UI, SEO.
+    </p>
+  </div>
+  <section class="few-words">
+    <h2>En quelques mots</h2>
+    <p>
+      J'aime me décrire comme une grande curieuse. La polyvalence et la prise de
+      décision me plaisent. J'apprécie autant le travail d'équipe qu'en
+      autonomie, l'ambiance scolaire que la vie professionnelle. Ce que je
+      préfère : découvrir et redécouvrir ce qui m'anime dans le digital.
+    </p>
+    <div class="cta">
+      <Button title="Découvrir mes projets" href="/mes-projets/" />
+      <img src="/assets/icons/star1.svg" alt="" width="46" height="61" />
+    </div>
+  </section>
+  <section class="parkour">
+    <div class="parkour_inner">
+      <div class="title_parkour">
+        <h2>Mon parcours professionnel</h2>
+        <img src="/assets/icons/star2.svg" alt="" width="78" height="68" />
+      </div>
 
-					<div class="alternance">
-						<h3>2025 → 2026 - Webdesigner en alternance</h3>
-						<p>
-							Afin de valider mon Bachelor, je suis actuellement en poste en
-							alternance en tant que community manager, et apprentie
-							développeuse web.
-						</p>
-						<ul>
-							<li>Veille et mise en place d'un flux RSS</li>
-							<li>Utilisation de HTML, CSS</li>
-							<li>Utilisation de CMS</li>
-							<li>Configuration de serveur</li>
-						</ul>
-					</div>
-					<div class="second-internship">
-						<h3>2025 - Stage de 4 mois</h3>
-						<p>
-							Durant ma 2eme année d'étude, j'ai eu l'opportunité de réaliser
-							mon second stage, en full remote également, en tant que
-							webdesigner, chargée SEO, et stratégie webmarketing et UX.
-						</p>
-						<ul>
-							<li>Prise de lead avec les clients</li>
-							<li>Design de maquette</li>
-							<li>Maîtrise de Figma</li>
-							<li>Stratégie SEO</li>
-							<li>Recherche et veille en UI/UX</li>
-						</ul>
-					</div>
-					<div class="first-internship">
-						<h3>2024 - Stage de 2 mois</h3>
-						<p>
-							Au cours de ma 1ere année de Bachelor, j'ai effectué mon premier
-							stage, en full remote, en tant que monteuse vidéo et assistante de
-							production pour YouTube.
-						</p>
-						<ul>
-							<li>Maîtrise d'Adobe</li>
-							<li>Veille sur les techniques de production et de montage</li>
-							<li>Autonomie</li>
-						</ul>
-					</div>
-					<div class="resto">
-						<h3>2017 → 2024 - Restauration</h3>
-						<p>
-							Dès que j'ai pu, j'ai commencé à travailler, et j'ai trouvé ma
-							place dans la restauration. Pour moi, comprendre la valeur du
-							travail et de l'indépendance est crucial. Depuis mes débuts, j'ai
-							rapidement eu des posts à responsabilité.
-						</p>
-						<ul>
-							<li>Polyvalence</li>
-							<li>Autonomie</li>
-							<li>Prise de décision</li>
-							<li>Travail en équipe</li>
-							<li>Relation client</li>
-							<li>Gestion d'équipe</li>
-						</ul>
-					</div>
-					<Button
-						title="Télécharger mon CV"
-						pdfUrl="/assets/pdfs/figuerola-nelia_CV.pdf"
-					/>
-				</div>
-			</section>
-			<Contact />
-		</main>
-		<Footer />
-	</body>
-</html>
+      <div class="alternance">
+        <h3>2025 → 2026 - Webdesigner en alternance</h3>
+        <p>
+          Afin de valider mon Bachelor, je suis actuellement en poste en
+          alternance en tant que community manager, et apprentie développeuse
+          web.
+        </p>
+        <ul>
+          <li>Veille et mise en place d'un flux RSS</li>
+          <li>Utilisation de HTML, CSS</li>
+          <li>Utilisation de CMS</li>
+          <li>Configuration de serveur</li>
+        </ul>
+      </div>
+      <div class="second-internship">
+        <h3>2025 - Stage de 4 mois</h3>
+        <p>
+          Durant ma 2eme année d'étude, j'ai eu l'opportunité de réaliser mon
+          second stage, en full remote également, en tant que webdesigner,
+          chargée SEO, et stratégie webmarketing et UX.
+        </p>
+        <ul>
+          <li>Prise de lead avec les clients</li>
+          <li>Design de maquette</li>
+          <li>Maîtrise de Figma</li>
+          <li>Stratégie SEO</li>
+          <li>Recherche et veille en UI/UX</li>
+        </ul>
+      </div>
+      <div class="first-internship">
+        <h3>2024 - Stage de 2 mois</h3>
+        <p>
+          Au cours de ma 1ere année de Bachelor, j'ai effectué mon premier
+          stage, en full remote, en tant que monteuse vidéo et assistante de
+          production pour YouTube.
+        </p>
+        <ul>
+          <li>Maîtrise d'Adobe</li>
+          <li>Veille sur les techniques de production et de montage</li>
+          <li>Autonomie</li>
+        </ul>
+      </div>
+      <div class="resto">
+        <h3>2017 → 2024 - Restauration</h3>
+        <p>
+          Dès que j'ai pu, j'ai commencé à travailler, et j'ai trouvé ma place
+          dans la restauration. Pour moi, comprendre la valeur du travail et de
+          l'indépendance est crucial. Depuis mes débuts, j'ai rapidement eu des
+          posts à responsabilité.
+        </p>
+        <ul>
+          <li>Polyvalence</li>
+          <li>Autonomie</li>
+          <li>Prise de décision</li>
+          <li>Travail en équipe</li>
+          <li>Relation client</li>
+          <li>Gestion d'équipe</li>
+        </ul>
+      </div>
+      <Button
+        title="Télécharger mon CV"
+        pdfUrl="/assets/pdfs/figuerola-nelia_CV.pdf"
+      />
+    </div>
+  </section>
+  <Contact />
+</Default>
 
 <style>
-	body {
-		background: var(--primary);
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		gap: var(--space-2xl);
-	}
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 
-	.hero {
-		display: flex;
-		width: 100%;
-		flex-direction: column;
-		justify-content: center;
-		align-items: flex-start;
-		gap: 30px;
-	}
+  .few-words {
+    display: flex;
+    padding: var(--space-xl) var(--space-m-l);
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+    box-sizing: border-box;
+  }
 
-	header {
-		display: flex;
-		width: 100%;
-		padding: 0 var(--space-m-l);
-		flex-direction: column;
-		flex-wrap: wrap;
-		align-items: flex-start;
-		justify-content: center;
-		gap: var(--space-s);
-		box-sizing: border-box;
-	}
+  .cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-self: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 
-	.title {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-end;
-	}
+  .parkour {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: var(--secondary);
+    gap: 30px;
+  }
 
-	h1 {
-		color: var(--title);
-		font-family: "Monotalic";
-		font-size: var(--step-4);
-		margin-top: 0px;
-		margin-bottom: 0px;
-	}
+  .parkour_inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    padding: var(--space-xl) var(--space-m-l);
+    box-sizing: border-box;
+    align-items: flex-start;
+  }
 
-	h2 {
-		color: var(--title);
-		font-family: "ABC Favorit Mono Edu";
-		font-size: var(--step-3);
-		margin-top: 0px;
-		margin-bottom: 0px;
-	}
+  .title_parkour {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    gap: 10px;
+  }
 
-	h3 {
-		color: var(--title);
-		font-family: "ABC Favorit Mono Edu";
-		font-size: var(--step-2);
-		margin-top: 0px;
-		margin-bottom: 0px;
-	}
-
-	p {
-		color: var(--text-primary);
-		font-family: "Fibra One";
-		font-size: var(--step-0);
-		margin-top: 0px;
-		margin-bottom: 0px;
-	}
-
-	li {
-		color: var(--text-primary);
-		font-family: "Fibra One";
-		font-size: var(--step-0);
-		margin-top: 0px;
-		margin-bottom: 0px;
-	}
-
-	main {
-		display: flex;
-		max-width: 1200px;
-		flex-direction: column;
-		gap: var(--space-2xl);
-		margin-top: 150px;
-	}
-
-	.few-words {
-		display: flex;
-		padding: var(--space-xl) var(--space-m-l);
-		flex-direction: column;
-		justify-content: center;
-		align-items: flex-start;
-		gap: 30px;
-		align-self: stretch;
-		box-sizing: border-box;
-	}
-
-	.cta {
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-end;
-		align-self: stretch;
-		flex-wrap: wrap;
-		gap: 20px;
-	}
-
-	.parkour {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		background: var(--secondary);
-		gap: 30px;
-	}
-
-	.parkour_inner {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		gap: 20px;
-		padding: var(--space-xl) var(--space-m-l);
-		box-sizing: border-box;
-		align-items: flex-start;
-	}
-
-	.title_parkour {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		align-items: center;
-		align-self: stretch;
-		gap: 10px;
-	}
-
-	.alternance,
-	.second-internship,
-	.first-internship,
-	.resto {
-		display: flex;
-		flex-direction: column;
-		gap: 20px;
-	}
-
-	@media screen and (max-width: 480px) {
-		* img {
-			display: none;
-		}
-
-		main {
-			margin-top: 0;
-		}
-	}
+  .alternance,
+  .second-internship,
+  .first-internship,
+  .resto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 </style>
