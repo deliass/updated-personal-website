@@ -1,185 +1,185 @@
 ---
-import Nav from "../../components/Nav.astro";
-import Footer from "../../components/Footer.astro";
-import Breadcrumbs from "../../components/Breadcrumbs.astro";
-import Head from "../../components/Head.astro";
+import Nav from "../../components/Nav.astro"
+import Footer from "../../components/Footer.astro"
+import Breadcrumbs from "../../components/Breadcrumbs.astro"
+import Head from "../../components/Head.astro"
 ---
 
 <html lang="fr">
-  <Head />
-  <body>
-    <Nav />
-    <main>
-      <Breadcrumbs
-        items={[
-          { href: "/portfolio/", label: "Accueil" },
-          { href: "/portfolio/mes-projets", label: "Mes projets" },
-        ]}
-        current="UX Spiral Éditions"
-      />
-      <header>
-        <h1 class="project-title">UX Design pour *Spiral Éditions</h1>
-      </header>
-      <section class="def">
-        <div class="def__inner">
-          <p>
-            <b>*Spiral Éditions :</b>
-            <br />Une jeune société d’édition française basée dans le Sud de la
-            France, à Muret, à quelques kilomètres de Toulouse. Elle est née en
-            2021 sous l’impulsion de quatre amis qui se sont connus grâce à
-            l’univers du jeu. Il y a Mathias, Théo, Guillaume et Yannick. Tous
-            impliqués dans le milieu du jeu de société, à des degrés divers, ils
-            ont décidé de faire découvrir à leur tour au public les jeux qu’ils
-            aiment. Chez Spiral Éditions, l’objectif est avant tout d’éditer des
-            jeux qui vont s’inscrire dans le temps. Des jeux auxquels vous
-            aurez, encore et toujours envie de rejouer !
-          </p>
-          <a href="https://blackrockgames.fr/pages/FAR00097" target="_blank"
-            >Les découvrir</a
-          >
-        </div>
-      </section>
-      <section class="contexte">
-        <h2 class="project-heading">Contexte</h2>
-        <p>
-          Nous avons eu pour mission de designer le stand de l'équipe pour le <a
-            href="https://www.festivaldesjeux-cannes.com/fr/"
-            target="_blank">Festival de Cannes des Jeux</a
-          > Nous avons donc eu une semaine de sprint pour réfléchir, penser, questionner,
-          imaginer et concevoir ce design. Projet encadré par <a
-            href="https://www.linkedin.com/in/benoit-verger/"
-            target="_blank">Benoît Verger</a
-          >.
-        </p>
-      </section>
-      <section class="skills">
-        <h2 class="project-heading">Compétences</h2>
-        <p>
-          Durant le projet, nous étions en plusieurs groupes d'étudiants. Nous
-          avons travaillé sur un benchmark du marché existant, nous avons
-          travaillé sur des proto persona, et enfin nous avons conçu une
-          maquette sur HomeByMe.
-        </p>
-      </section>
-      <section class="productions">
-        <h2 class="project-heading">Le rendu</h2>
-        <p>
-          Si vous voulez voir la présentation finale, vous pouvez la consulter
-          ici, pour découvrir mon process :
-        </p>
-        <div
-          style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+	<Head />
+	<body>
+		<Nav />
+		<main>
+			<Breadcrumbs
+				items={[
+					{ href: "/", label: "Accueil" },
+					{ href: "/projets", label: "Mes projets" },
+				]}
+				current="UX Spiral Éditions"
+			/>
+			<header>
+				<h1 class="project-title">UX Design pour *Spiral Éditions</h1>
+			</header>
+			<section class="def">
+				<div class="def__inner">
+					<p>
+						<b>*Spiral Éditions :</b>
+						<br />Une jeune société d’édition française basée dans le Sud de la
+						France, à Muret, à quelques kilomètres de Toulouse. Elle est née en
+						2021 sous l’impulsion de quatre amis qui se sont connus grâce à
+						l’univers du jeu. Il y a Mathias, Théo, Guillaume et Yannick. Tous
+						impliqués dans le milieu du jeu de société, à des degrés divers, ils
+						ont décidé de faire découvrir à leur tour au public les jeux qu’ils
+						aiment. Chez Spiral Éditions, l’objectif est avant tout d’éditer des
+						jeux qui vont s’inscrire dans le temps. Des jeux auxquels vous
+						aurez, encore et toujours envie de rejouer !
+					</p>
+					<a href="https://blackrockgames.fr/pages/FAR00097" target="_blank"
+						>Les découvrir</a
+					>
+				</div>
+			</section>
+			<section class="contexte">
+				<h2 class="project-heading">Contexte</h2>
+				<p>
+					Nous avons eu pour mission de designer le stand de l'équipe pour le <a
+						href="https://www.festivaldesjeux-cannes.com/fr/"
+						target="_blank">Festival de Cannes des Jeux</a
+					> Nous avons donc eu une semaine de sprint pour réfléchir, penser, questionner,
+					imaginer et concevoir ce design. Projet encadré par <a
+						href="https://www.linkedin.com/in/benoit-verger/"
+						target="_blank">Benoît Verger</a
+					>.
+				</p>
+			</section>
+			<section class="skills">
+				<h2 class="project-heading">Compétences</h2>
+				<p>
+					Durant le projet, nous étions en plusieurs groupes d'étudiants. Nous
+					avons travaillé sur un benchmark du marché existant, nous avons
+					travaillé sur des proto persona, et enfin nous avons conçu une
+					maquette sur HomeByMe.
+				</p>
+			</section>
+			<section class="productions">
+				<h2 class="project-heading">Le rendu</h2>
+				<p>
+					Si vous voulez voir la présentation finale, vous pouvez la consulter
+					ici, pour découvrir mon process :
+				</p>
+				<div
+					style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
  padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
  border-radius: 8px; will-change: transform;"
-        >
-          <iframe
-            loading="lazy"
-            style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-            src="https://www.canva.com/design/DAG7NpiovdE/LT3FjX344LWVKsARCv45-Q/view?embed"
-            allowfullscreen="allowfullscreen"
-            allow="fullscreen"
-          >
-          </iframe>
-        </div>
-        <a
-          href="https://www.canva.com/design/DAG7NpiovdE/LT3FjX344LWVKsARCv45-Q/view?utm_content=DAG7NpiovdE&utm_campaign=designshare&utm_medium=embeds&utm_source=link"
-          target="_blank"
-          rel="noopener"></a>
-      </section>
-    </main>
-  </body><Footer />
+				>
+					<iframe
+						loading="lazy"
+						style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+						src="https://www.canva.com/design/DAG7NpiovdE/LT3FjX344LWVKsARCv45-Q/view?embed"
+						allowfullscreen="allowfullscreen"
+						allow="fullscreen"
+					>
+					</iframe>
+				</div>
+				<a
+					href="https://www.canva.com/design/DAG7NpiovdE/LT3FjX344LWVKsARCv45-Q/view?utm_content=DAG7NpiovdE&utm_campaign=designshare&utm_medium=embeds&utm_source=link"
+					target="_blank"
+					rel="noopener"></a>
+			</section>
+		</main>
+	</body><Footer />
 </html>
 
 <style>
-  main {
-    display: flex;
-    flex-direction: column;
-    max-width: 1200px;
-    gap: var(--space-2xl);
-    box-sizing: border-box;
-    margin-top: 150px;
-  }
+	main {
+		display: flex;
+		flex-direction: column;
+		max-width: 1200px;
+		gap: var(--space-2xl);
+		box-sizing: border-box;
+		margin-top: 150px;
+	}
 
-  body {
-    background: var(--primary);
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    gap: var(--space-xl);
-  }
+	body {
+		background: var(--primary);
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		gap: var(--space-xl);
+	}
 
-  section {
-    padding: 0 var(--space-s-m);
-  }
+	section {
+		padding: 0 var(--space-s-m);
+	}
 
-  header {
-    display: flex;
-    width: 100%;
-    padding: 0 var(--space-s-m);
-    flex-direction: column;
-    gap: var(--space-s);
-  }
+	header {
+		display: flex;
+		width: 100%;
+		padding: 0 var(--space-s-m);
+		flex-direction: column;
+		gap: var(--space-s);
+	}
 
-  p {
-    color: var(--text-primary);
-    font-family: "Fibra One";
-    font-size: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
+	p {
+		color: var(--text-primary);
+		font-family: "Fibra One";
+		font-size: 20px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
 
-  a {
-    color: var(--text-primary);
-    font-family: "Fibra One";
-    font-size: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
+	a {
+		color: var(--text-primary);
+		font-family: "Fibra One";
+		font-size: 20px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
 
-  .hero {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 20px;
-  }
+	.hero {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		gap: 20px;
+	}
 
-  .photos {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-  }
+	.photos {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		gap: 20px;
+	}
 
-  .photo-bottom {
-    width: 100%;
-    height: auto;
-  }
+	.photo-bottom {
+		width: 100%;
+		height: auto;
+	}
 
-  .contexte,
-  .skills,
-  .productions {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
+	.contexte,
+	.skills,
+	.productions {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
 
-  .def {
-    width: 100%;
-    background: var(--secondary);
-  }
+	.def {
+		width: 100%;
+		background: var(--secondary);
+	}
 
-  .def__inner {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 20px;
-    padding: var(--space-s-m);
-  }
+	.def__inner {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		gap: 20px;
+		padding: var(--space-s-m);
+	}
 
-  @media screen and (max-width: 480px) {
-    main {
-      margin-top: 0;
-    }
-  }
+	@media screen and (max-width: 480px) {
+		main {
+			margin-top: 0;
+		}
+	}
 </style>

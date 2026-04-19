@@ -1,208 +1,192 @@
 ---
-import Nav from "../../components/Nav.astro";
-import Footer from "../../components/Footer.astro";
-import Breadcrumbs from "../../components/Breadcrumbs.astro";
-import Head from "../../components/Head.astro";
+import Nav from "../../components/Nav.astro"
+import Footer from "../../components/Footer.astro"
+import Breadcrumbs from "../../components/Breadcrumbs.astro"
+import Head from "../../components/Head.astro"
 ---
 
 <html lang="fr">
-  <Head />
-  <body>
-    <Nav />
-    <main>
-      <Breadcrumbs
-        items={[
-          { href: "/portfolio/", label: "Accueil" },
-          { href: "/portfolio/mes-projets", label: "Mes projets" },
-        ]}
-        current="Design d'étiquettes="
-      />
-      <header>
-        <h1 class="project-title">Design d'étiquettes</h1>
-        <div class="hero">
-          <img
-            src="/portfolio/assets/images/projects/flow/carte.jpg"
-            alt=""
-            width="129"
-            height="200"
-          />
-          <img
-            src="/portfolio/assets/images/projects/flow/flo.jpg"
-            alt=""
-            width="266"
-            height="200"
-          />
-        </div>
-      </header>
-      <section class="def">
-        <div class="def__inner">
-          <p>
-            Ma tante est cheffe privée, depuis petite, je l'aide à faire ses
-            chutneys, en été, pour vendre à des restaurants proches de là où je
-            viens (66). Avec les années, je ne peux plus être avec elle, mais
-            elle compte désormais sur moi pour réaliser les étiquettes de ses
-            pots !
-          </p>
-          <a href="https://flomercier.com/" target="_blank"
-            >Le site de ma tante</a
-          >
-        </div>
-      </section>
-      <section class="skills">
-        <h2 class="project-heading">Compétences</h2>
-        <p>
-          Ici, j'ai utilisé Illustrator pour créer les étiquettes. Sur la partie
-          DA, ma tante est plutôt stricte. Ses chutneys existaient déjà avant ma
-          naissance, donc les visuels ne sont pas (trop) discutables ! Mais
-          c'est avec plaisir qu'on s'échange nos points de vue et conseils lors
-          des créations.
-        </p>
-      </section>
-      <section class="productions">
-        <h2 class="project-heading">Les étiquettes</h2>
-        <div class="productions__inner">
-          <img
-            src="/portfolio/assets/images/projects/flow/1.jpg"
-            alt=""
-            width="200"
-          />
-          <img
-            src="/portfolio/assets/images/projects/flow/2.jpg"
-            alt=""
-            width="200"
-          />
-          <img
-            src="/portfolio/assets/images/projects/flow/3.jpg"
-            alt=""
-            width="200"
-          />
-          <img
-            src="/portfolio/assets/images/projects/flow/4.jpg"
-            alt=""
-            width="200"
-          />
-        </div>
-      </section>
-    </main>
-  </body><Footer />
+	<Head />
+	<body>
+		<Nav />
+		<main>
+			<Breadcrumbs
+				items={[
+					{ href: "/", label: "Accueil" },
+					{ href: "/projets", label: "Mes projets" },
+				]}
+				current="Design d'étiquettes="
+			/>
+			<header>
+				<h1 class="project-title">Design d'étiquettes</h1>
+				<div class="hero">
+					<img
+						src="/assets/images/projects/flow/carte.jpg"
+						alt=""
+						width="129"
+						height="200"
+					/>
+					<img
+						src="/assets/images/projects/flow/flo.jpg"
+						alt=""
+						width="266"
+						height="200"
+					/>
+				</div>
+			</header>
+			<section class="def">
+				<div class="def__inner">
+					<p>
+						Ma tante est cheffe privée, depuis petite, je l'aide à faire ses
+						chutneys, en été, pour vendre à des restaurants proches de là où je
+						viens (66). Avec les années, je ne peux plus être avec elle, mais
+						elle compte désormais sur moi pour réaliser les étiquettes de ses
+						pots !
+					</p>
+					<a href="https://flomercier.com/" target="_blank"
+						>Le site de ma tante</a
+					>
+				</div>
+			</section>
+			<section class="skills">
+				<h2 class="project-heading">Compétences</h2>
+				<p>
+					Ici, j'ai utilisé Illustrator pour créer les étiquettes. Sur la partie
+					DA, ma tante est plutôt stricte. Ses chutneys existaient déjà avant ma
+					naissance, donc les visuels ne sont pas (trop) discutables ! Mais
+					c'est avec plaisir qu'on s'échange nos points de vue et conseils lors
+					des créations.
+				</p>
+			</section>
+			<section class="productions">
+				<h2 class="project-heading">Les étiquettes</h2>
+				<div class="productions__inner">
+					<img src="/assets/images/projects/flow/1.jpg" alt="" width="200" />
+					<img src="/assets/images/projects/flow/2.jpg" alt="" width="200" />
+					<img src="/assets/images/projects/flow/3.jpg" alt="" width="200" />
+					<img src="/assets/images/projects/flow/4.jpg" alt="" width="200" />
+				</div>
+			</section>
+		</main>
+	</body><Footer />
 </html>
 
 <style>
-  main {
-    display: flex;
-    flex-direction: column;
-    max-width: 1200px;
-    gap: var(--space-2xl);
-    box-sizing: border-box;
-    margin-top: 150px;
-  }
+	main {
+		display: flex;
+		flex-direction: column;
+		max-width: 1200px;
+		gap: var(--space-2xl);
+		box-sizing: border-box;
+		margin-top: 150px;
+	}
 
-  body {
-    background: var(--primary);
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    gap: var(--space-xl);
-  }
+	body {
+		background: var(--primary);
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		gap: var(--space-xl);
+	}
 
-  section {
-    padding: 0 var(--space-s-m);
-  }
+	section {
+		padding: 0 var(--space-s-m);
+	}
 
-  header {
-    display: flex;
-    width: 100%;
-    padding: 0 var(--space-s-m);
-    flex-direction: column;
-    gap: var(--space-s);
-  }
+	header {
+		display: flex;
+		width: 100%;
+		padding: 0 var(--space-s-m);
+		flex-direction: column;
+		gap: var(--space-s);
+	}
 
-  p {
-    color: var(--text-primary);
-    font-family: "Fibra One";
-    font-size: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
+	p {
+		color: var(--text-primary);
+		font-family: "Fibra One";
+		font-size: 20px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
 
-  a {
-    color: var(--text-primary);
-    font-family: "Fibra One";
-    font-size: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
+	a {
+		color: var(--text-primary);
+		font-family: "Fibra One";
+		font-size: 20px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
 
-  .hero {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    width: 100%;
-    gap: 20px;
-  }
+	.hero {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		width: 100%;
+		gap: 20px;
+	}
 
-  .photos {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-  }
+	.photos {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		gap: 20px;
+	}
 
-  .photo-bottom {
-    width: 100%;
-    height: auto;
-  }
+	.photo-bottom {
+		width: 100%;
+		height: auto;
+	}
 
-  .skills {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
 
-  .productions {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
+	.productions {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
 
-  .presentation {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
+	.presentation {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
 
-  .productions__inner {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    align-self: center;
-  }
+	.productions__inner {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 30px;
+		align-self: center;
+	}
 
-  .def {
-    width: 100%;
-    background: var(--secondary);
-  }
+	.def {
+		width: 100%;
+		background: var(--secondary);
+	}
 
-  .def__inner {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 20px;
-    padding: var(--space-s-m);
-  }
+	.def__inner {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		gap: 20px;
+		padding: var(--space-s-m);
+	}
 
-  @media screen and (max-width: 480px) {
-    main {
-      margin-top: 0;
-    }
+	@media screen and (max-width: 480px) {
+		main {
+			margin-top: 0;
+		}
 
-    .productions__inner {
-      grid-template-columns: 1fr;
-    }
+		.productions__inner {
+			grid-template-columns: 1fr;
+		}
 
-    .hero {
-      display: none;
-    }
-  }
+		.hero {
+			display: none;
+		}
+	}
 </style>

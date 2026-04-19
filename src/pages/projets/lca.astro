@@ -1,166 +1,166 @@
 ---
-import Nav from "../../components/Nav.astro";
-import Footer from "../../components/Footer.astro";
-import Breadcrumbs from "../../components/Breadcrumbs.astro";
-import Head from "../../components/Head.astro";
+import Nav from "../../components/Nav.astro"
+import Footer from "../../components/Footer.astro"
+import Breadcrumbs from "../../components/Breadcrumbs.astro"
+import Head from "../../components/Head.astro"
 ---
 
 <html lang="fr">
-  <Head />
-  <body>
-    <Nav />
-    <main>
-      <Breadcrumbs
-        items={[
-          { href: "/portfolio/", label: "Accueil" },
-          { href: "/portfolio/mes-projets", label: "Mes projets" },
-        ]}
-        current="La Conciergerie Administrative"
-      />
-      <header>
-        <h1 class="project-title">Communication pour *LCA</h1>
-        <div class="hero">
-          <img
-            src="/portfolio/assets/images/projects/lca/lca.svg"
-            alt=""
-            height="400px"
-          />
-        </div>
-      </header>
-      <section class="def">
-        <div class="def__inner">
-          <p>
-            <b>*La Conciergerie Administrative :</b><br />C'est l'entreprise
-            pour laquelle je travaille en alternance. Charlotte propose ses
-            services d'audit d'entreprises pour alléger et améliorer la santé
-            financière et légale de ses clients.
-          </p>
-          <a
-            href="https://www.laconciergerieadministrative.com/"
-            target="_blank">Voir son site</a
-          >
-        </div>
-      </section>
-      <section class="contexte">
-        <h2 class="project-heading">Contexte</h2>
-        <p>
-          Je fais mon alternance avec un double contrat. Je suis à la fois
-          webdesigner et dev, mais aussi chargée de communication. C'est dans ce
-          second rôle que je réalise la communication de LCA, sur <a
-            href="https://www.instagram.com/laconciergerieadministrative/"
-            target="_blank">Instagram</a
-          > et <a
-            href="https://www.linkedin.com/company/la-conciergerie-administrative1/posts/?feedView=all"
-            target="_blank">LinkedIn</a
-          >.
-        </p>
-      </section>
-      <section class="skills">
-        <h2 class="project-heading">Compétences</h2>
-        <p>
-          Je crée les visuels sur Canva, et fais ma veille sur Pinterest ou
-          Instagram. Notre principal outil de travail est Monday. Je réalise
-          aussi, parfois, des benchmarks pour permettre à Charlotte de se
-          positionner par rapport à ses concurrents. J'ai eu l'opportunité de
-          suivre une formation en e-learning sur la stratégie à adopter sur
-          LinkedIn, mais aussi eu l'occasion de suivre des webinaires sur des
-          sujets liés à son activité, comme un webinaire sur la nouvelle réforme
-          de la facturation électronique.
-        </p>
-      </section>
-    </main>
-  </body><Footer />
+	<Head />
+	<body>
+		<Nav />
+		<main>
+			<Breadcrumbs
+				items={[
+					{ href: "/", label: "Accueil" },
+					{ href: "/projets", label: "Mes projets" },
+				]}
+				current="La Conciergerie Administrative"
+			/>
+			<header>
+				<h1 class="project-title">Communication pour *LCA</h1>
+				<div class="hero">
+					<img
+						src="/assets/images/projects/lca/lca.svg"
+						alt=""
+						height="400px"
+					/>
+				</div>
+			</header>
+			<section class="def">
+				<div class="def__inner">
+					<p>
+						<b>*La Conciergerie Administrative :</b><br />C'est l'entreprise
+						pour laquelle je travaille en alternance. Charlotte propose ses
+						services d'audit d'entreprises pour alléger et améliorer la santé
+						financière et légale de ses clients.
+					</p>
+					<a
+						href="https://www.laconciergerieadministrative.com/"
+						target="_blank">Voir son site</a
+					>
+				</div>
+			</section>
+			<section class="contexte">
+				<h2 class="project-heading">Contexte</h2>
+				<p>
+					Je fais mon alternance avec un double contrat. Je suis à la fois
+					webdesigner et dev, mais aussi chargée de communication. C'est dans ce
+					second rôle que je réalise la communication de LCA, sur <a
+						href="https://www.instagram.com/laconciergerieadministrative/"
+						target="_blank">Instagram</a
+					> et <a
+						href="https://www.linkedin.com/company/la-conciergerie-administrative1/posts/?feedView=all"
+						target="_blank">LinkedIn</a
+					>.
+				</p>
+			</section>
+			<section class="skills">
+				<h2 class="project-heading">Compétences</h2>
+				<p>
+					Je crée les visuels sur Canva, et fais ma veille sur Pinterest ou
+					Instagram. Notre principal outil de travail est Monday. Je réalise
+					aussi, parfois, des benchmarks pour permettre à Charlotte de se
+					positionner par rapport à ses concurrents. J'ai eu l'opportunité de
+					suivre une formation en e-learning sur la stratégie à adopter sur
+					LinkedIn, mais aussi eu l'occasion de suivre des webinaires sur des
+					sujets liés à son activité, comme un webinaire sur la nouvelle réforme
+					de la facturation électronique.
+				</p>
+			</section>
+		</main>
+	</body><Footer />
 </html>
 
 <style>
-  main {
-    display: flex;
-    flex-direction: column;
-    max-width: 1200px;
-    gap: var(--space-2xl);
-    box-sizing: border-box;
-    margin-top: 150px;
-  }
+	main {
+		display: flex;
+		flex-direction: column;
+		max-width: 1200px;
+		gap: var(--space-2xl);
+		box-sizing: border-box;
+		margin-top: 150px;
+	}
 
-  body {
-    background: var(--primary);
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    gap: var(--space-xl);
-  }
+	body {
+		background: var(--primary);
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		gap: var(--space-xl);
+	}
 
-  section {
-    padding: 0 var(--space-s-m);
-  }
+	section {
+		padding: 0 var(--space-s-m);
+	}
 
-  header {
-    display: flex;
-    width: 100%;
-    padding: 0 var(--space-s-m);
-    flex-direction: column;
-    gap: var(--space-s);
-  }
+	header {
+		display: flex;
+		width: 100%;
+		padding: 0 var(--space-s-m);
+		flex-direction: column;
+		gap: var(--space-s);
+	}
 
-  p {
-    color: var(--text-primary);
-    font-family: "Fibra One";
-    font-size: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
+	p {
+		color: var(--text-primary);
+		font-family: "Fibra One";
+		font-size: 20px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
 
-  a {
-    color: var(--text-primary);
-    font-family: "Fibra One";
-    font-size: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
+	a {
+		color: var(--text-primary);
+		font-family: "Fibra One";
+		font-size: 20px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
 
-  .hero {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 20px;
-  }
+	.hero {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		gap: 20px;
+	}
 
-  .photos {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-  }
+	.photos {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		gap: 20px;
+	}
 
-  .photo-bottom {
-    width: 100%;
-    height: auto;
-  }
+	.photo-bottom {
+		width: 100%;
+		height: auto;
+	}
 
-  .contexte,
-  .skills {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
+	.contexte,
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
 
-  .def {
-    width: 100%;
-    background: var(--secondary);
-  }
+	.def {
+		width: 100%;
+		background: var(--secondary);
+	}
 
-  .def__inner {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 20px;
-    padding: var(--space-s-m);
-  }
+	.def__inner {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		gap: 20px;
+		padding: var(--space-s-m);
+	}
 
-  @media screen and (max-width: 480px) {
-    main {
-      margin-top: 0;
-    }
-  }
+	@media screen and (max-width: 480px) {
+		main {
+			margin-top: 0;
+		}
+	}
 </style>

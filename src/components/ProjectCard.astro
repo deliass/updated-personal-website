@@ -1,100 +1,103 @@
 ---
-import Button from "../components/Button.astro";
+import Button from "../components/Button.astro"
 
 interface Props {
-  year: string;
-  type: string;
-  category: string;
-  image: string;
-  alt?: string;
-  href?: string;
-  buttonLabel?: string;
-  filterType: string;
+	title: string
+	year: string
+	type: string
+	category: string
+	image?: string
+	alt?: string
+	href?: string
+	buttonLabel?: string
+	filterType: string
 }
 
 const {
-  year,
-  type,
-  category,
-  image,
-  alt = "Aperçu du projet",
-  href = "#",
-  buttonLabel = "Voir le projet",
-  filterType,
-} = Astro.props;
+	title,
+	year,
+	type,
+	category,
+	image,
+	alt = "Aperçu du projet",
+	href = "#",
+	buttonLabel = "Voir le projet",
+	filterType,
+} = Astro.props
 ---
 
 <article class="project-card" data-type={filterType}>
-  <img src={image} alt={alt} class="project-card__image" />
-  <div class="project-card__content">
-    <p class="project-card__meta">{type} • {category}</p>
-    <p class="project-card__year">{year}</p>
-    <Button title={buttonLabel} href={href} />
-  </div>
+	<img src={image} alt={alt} class="project-card__image" />
+	<div class="project-card__content">
+		<p>{title}</p>
+		<p class="project-card__meta">{type} • {category}</p>
+		<p class="project-card__year">{year}</p>
+		<Button title={buttonLabel} href={href} />
+	</div>
 </article>
 
 <style>
-  button {
-    cursor: pointer;
-    display: flex;
-    padding: 6px 15px;
-    width: fit-content;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 3px;
-    border: 1.5px solid var(--title);
-    background-color: var(--secondary);
-    color: var(--title);
-    font-family: "Fibra One";
-    font-size: var(--step-0);
-    list-style: none;
-    text-decoration: none;
-  }
+	button {
+		cursor: pointer;
+		display: flex;
+		padding: 6px 15px;
+		width: fit-content;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		border-radius: 3px;
+		border: 1.5px solid var(--title);
+		background-color: var(--secondary);
+		color: var(--title);
+		font-family: "Fibra One";
+		font-size: var(--step-0);
+		list-style: none;
+		text-decoration: none;
+	}
 
-  button:hover {
-    border: dashed 1.5px var(--text-primary);
-  }
+	button:hover {
+		border: dashed 1.5px var(--text-primary);
+	}
 
-  .project-card {
-    background: var(--secondary);
-    border-radius: 5px;
-    padding: clamp(0.75rem, 2vw, 1.25rem);
-    width: 100%;
-    box-sizing: border-box;
-    color: var(--title);
-    font-family: "Fibra One";
-  }
+	.project-card {
+		background: var(--secondary);
+		border-radius: 5px;
+		padding: clamp(0.75rem, 2vw, 1.25rem);
+		width: 100%;
+		box-sizing: border-box;
+		color: var(--title);
+		font-family: "Fibra One";
+	}
 
-  .project-card__image {
-    width: 100%; /* fluide, suit la carte */
-    aspect-ratio: 16 / 10; /* maintient les proportions sans hauteur fixe */
-    display: block;
-    object-fit: cover;
-    border-radius: 3px;
-    margin-bottom: clamp(0.5rem, 1.5vw, 0.875rem);
-  }
+	.project-card__image {
+		width: 100%; /* fluide, suit la carte */
+		aspect-ratio: 16 / 10; /* maintient les proportions sans hauteur fixe */
+		display: block;
+		object-fit: cover;
+		border-radius: 3px;
+		margin-bottom: clamp(0.5rem, 1.5vw, 0.875rem);
+	}
 
-  .project-card__content {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
+	.project-card__content {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
 
-  .project-card__meta {
-    margin: 0;
-    font-size: var(--step-0);
-    color: var(--text-primary);
-  }
+	.project-card__meta {
+		margin: 0;
+		font-size: var(--step-0);
+		color: var(--text-primary);
+	}
 
-  .project-card__year {
-    margin: 0;
-    font-size: var(--step--1);
-    font-weight: bold;
-    color: var(--text-primary);
-  }
+	.project-card__year {
+		margin: 0;
+		font-size: var(--step--1);
+		font-weight: bold;
+		color: var(--text-primary);
+	}
 
-  a {
-    text-decoration: none;
-  }
+	a {
+		text-decoration: none;
+	}
 </style>

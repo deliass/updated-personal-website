@@ -1,13 +1,22 @@
 ---
-import "../style/fonts.css";
-import "../style/variables.css";
+import "../style/fonts.css"
+import "../style/variables.css"
+
+interface Props {
+	pageTitle?: string
+}
+
+const globalTitle = "Nélia Figuerola"
+
+const { pageTitle } = Astro.props
+const title = pageTitle ? `${pageTitle} - ${globalTitle}` : globalTitle
 ---
 
 <head>
-  <meta charset="utf-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="icon" href="/favicon.ico" />
-  <meta name="viewport" content="width=device-width" />
-  <meta name="generator" content={Astro.generator} />
-  <title>Nélia Figuerola</title>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<link rel="icon" href="/favicon.ico" />
+	<meta name="viewport" content="width=device-width" />
+	<meta name="generator" content={Astro.generator} />
+	<title>{title}</title>
 </head>

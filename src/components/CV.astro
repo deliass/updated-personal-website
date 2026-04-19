@@ -1,78 +1,78 @@
 ---
-import Button from "../components/Button.astro";
+import Button from "../components/Button.astro"
 ---
 
 <section class="cv">
-  <div class="cv__inner">
-    <h2>Garder mon CV</h2>
-    <p>
-      Si mes projets vous plaisent, vous pouvez télécharger mon CV pour garder
-      une vue d'ensemble de ma vie professionnelle.
-    </p>
-    <div class="cv__assets">
-      <Button
-        title="Télécharger mon CV"
-        pdfUrl="/portfolio/assets/pdfs/figuerola-nelia_CV.pdf"
-      />
-      <img
-        src="/portfolio/assets/icons/cv.svg"
-        alt=""
-        aria-hidden="true"
-        class="cv__deco"
-      />
-    </div>
-  </div>
+	<div class="cv__inner">
+		<h2>Garder mon CV</h2>
+		<p>
+			Si mes projets vous plaisent, vous pouvez télécharger mon CV pour garder
+			une vue d'ensemble de ma vie professionnelle.
+		</p>
+		<div class="cv__assets">
+			<Button
+				title="Télécharger mon CV"
+				pdfUrl="/assets/pdfs/figuerola-nelia_CV.pdf"
+			/>
+			<img
+				src="/assets/icons/cv.svg"
+				alt=""
+				aria-hidden="true"
+				class="cv__deco"
+			/>
+		</div>
+	</div>
 </section>
 
 <style>
-  h2 {
-    color: var(--title);
-    font-family: "ABC Favorit Mono Edu";
-    font-size: var(--step-4);
-    margin: 0;
-  }
+	h2 {
+		color: var(--title);
+		font-family: "ABC Favorit Mono Edu";
+		font-size: var(--step-4);
+		margin: 0;
+	}
 
-  p {
-    color: var(--text-primary);
-    font-family: "Fibra One";
-    font-size: var(--step-0);
-    margin: 0;
-  }
+	p {
+		color: var(--text-primary);
+		font-family: "Fibra One";
+		font-size: var(--step-0);
+		margin: 0;
+	}
 
-  .cv {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    background: var(--secondary);
-  }
+	.cv {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		background: var(--secondary);
+	}
 
-  .cv__inner {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: var(--space-s);
-    padding: var(--space-m-l);
-    box-sizing: border-box;
-  }
+	.cv__inner {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		gap: var(--space-s);
+		padding: var(--space-m-l);
+		box-sizing: border-box;
+	}
 
-  .cv__assets {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    align-self: stretch;
-    flex-wrap: wrap;
-  }
+	.cv__assets {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		align-self: stretch;
+		flex-wrap: wrap;
+	}
 
-  .cv__deco {
-    max-width: 78px;
-    height: auto;
-  }
+	.cv__deco {
+		max-width: 78px;
+		height: auto;
+	}
 
-  @media (max-width: 480px) {
-    .cv__deco {
-      display: none;
-    }
-  }
+	@media (max-width: 480px) {
+		.cv__deco {
+			display: none;
+		}
+	}
 </style>
