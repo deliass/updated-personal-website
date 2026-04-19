@@ -1,145 +1,56 @@
 ---
-import Nav from "../components/Nav.astro"
-import Footer from "../components/Footer.astro"
-import CV from "../components/CV.astro"
-import Breadcrumbs from "../components/Breadcrumbs.astro"
-import Head from "../components/Head.astro"
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+import CV from "../components/CV.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import Default from "../layout/default.astro";
 ---
 
-<html lang="fr">
-	<Head />
-	<body>
-		<Nav />
-		<main>
-			<Breadcrumbs
-				items={[{ href: "/", label: "Accueil" }]}
-				current="Contact"
-			/>
-			<header>
-				<div class="title">
-					<h1>Me contacter</h1>
-					<img src="/assets/icons/contact-h.svg" alt="" />
-				</div>
-				<p>N'hésitez pas à me contacter si mon profil vous a plu !</p>
-			</header>
-			<section class="contact__info">
-				<div class="tel">
-					<img
-						src="/assets/icons/phone.svg"
-						alt="Téléphone"
-						width="19"
-						height="19"
-					/>
-					<a href="tel:+33612345678">+33 6 23 83 40 84</a>
-				</div>
-				<div class="email">
-					<img
-						src="/assets/icons/mail.svg"
-						alt="Email"
-						width="19"
-						height="19"
-					/>
-					<a href="mailto:nelia@tuta.io">nelia@tuta.io</a>
-				</div>
-			</section>
-			<CV />
-		</main>
-		<Footer />
-	</body>
-</html>
+<Default pageTitle="Contact">
+  <Breadcrumbs items={[{ href: "/", label: "Accueil" }]} current="Contact" />
+  <div class="hero">
+    <h1>Me contacter</h1>
+    <img src="/assets/icons/contact-h.svg" alt="" />
+    <p>N'hésitez pas à me contacter si mon profil vous a plu !</p>
+  </div>
+  <section class="contact__info">
+    <div class="tel">
+      <img
+        src="/assets/icons/phone.svg"
+        alt="Téléphone"
+        width="19"
+        height="19"
+      />
+      <a href="tel:+33612345678">+33 6 23 83 40 84</a>
+    </div>
+    <div class="email">
+      <img src="/assets/icons/mail.svg" alt="Email" width="19" height="19" />
+      <a href="mailto:nelia@tuta.io">nelia@tuta.io</a>
+    </div>
+  </section>
+  <CV />
+</Default>
 
 <style>
-	main {
-		display: flex;
-		flex-direction: column;
-		max-width: 1200px;
-		gap: var(--space-2xl);
-		box-sizing: border-box;
-		margin-top: 150px;
-	}
+  .tel a,
+  .email a {
+    color: var(--text-primary);
+    font-family: "Fibra One";
+    font-size: var(--step-0);
+    text-decoration: none;
+  }
 
-	body {
-		background: var(--primary);
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		justify-content: center;
-		gap: var(--space-xl);
-	}
+  .tel,
+  .email {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2xs);
+  }
 
-	section {
-		padding: 0 var(--space-s-m);
-	}
-
-	header {
-		display: flex;
-		width: 100%;
-		padding: 0 var(--space-s-m);
-		flex-direction: column;
-		gap: var(--space-s);
-	}
-
-	h1 {
-		color: var(--title);
-		font-family: "monotalic";
-		font-size: var(--step-5);
-		margin-top: 0px;
-		margin-bottom: 0px;
-	}
-
-	h2 {
-		color: var(--title);
-		font-family: "ABC Favorit Mono Edu";
-		font-size: var(--step-4);
-		margin-top: 0px;
-		margin-bottom: 0px;
-	}
-
-	h3 {
-		color: var(--title);
-		font-family: "ABC Favorit Mono Edu";
-		font-size: var(--step-3);
-		margin-top: 0px;
-		margin-bottom: 0px;
-	}
-
-	p {
-		color: var(--text-primary);
-		font-family: "Fibra One";
-		font-size: var(--step-0);
-		margin-top: 0px;
-		margin-bottom: 0px;
-	}
-
-	.tel a,
-	.email a {
-		color: var(--text-primary);
-		font-family: "Fibra One";
-		font-size: var(--step-0);
-		text-decoration: none;
-	}
-
-	.tel,
-	.email {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		gap: var(--space-2xs);
-	}
-
-	.contact__info {
-		display: flex;
-		flex-direction: column;
-		gap: var(--space-2xs);
-	}
-
-	@media (max-width: 480px) {
-		* img {
-			display: none;
-		}
-
-		main {
-			margin-top: 0;
-		}
-	}
+  .contact__info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2xs);
+  }
 </style>
