@@ -1,9 +1,11 @@
 @import "../../src/style/style.css";
 
 
+
 .project-page {
 	display: flex;
 	gap: var(--space-l);
+	margin-top: 0;
 }
 
 section {
@@ -21,6 +23,7 @@ section {
 .project-intro {
 	display: flex;
 	flex-direction: column;
+	align-items: flex-start;
 	gap: var(--space-l);
 }
 
@@ -34,7 +37,8 @@ li, a {
 }
 
 .project-intro__image {
-	width: 100%;
+	align-self: center;
+	width: 50%;
 }
 
 .productions__inner {
