@@ -1,7 +1,5 @@
 @import "../../src/style/style.css";
 
-
-
 .project-page {
 	display: flex;
 	gap: var(--space-l);
@@ -53,4 +51,14 @@ li, a {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: var(--space-s);
+}
+
+@media screen and (max-width: 480px) {
+	.project-page {
+		margin: var(--space-s);
+	}
+
+	.project-intro {
+		padding: 0;
+	}
 }
