@@ -19,7 +19,7 @@ personnel, que pour des amis, quand il s'agit de leurs projets pro.
 Voici les photos que j'ai prises :
 
 <div class="photos">
-	<img src="/assets/images/projects/photos-perso/perpi1.png" alt="" />
+	<img src="/assets/images/projects/photos-perso/maxime.png" alt="" />
 	<img src="/assets/images/projects/photos-perso/perpi2.png" alt="" />
 	<img src="/assets/images/projects/photos-perso/perpi3.png" alt="" />
 	<img src="/assets/images/projects/photos-perso/perpi4.png" alt="" />

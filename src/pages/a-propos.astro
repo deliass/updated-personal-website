@@ -1,11 +1,15 @@
 ---
 import Button from "../components/Button.astro";
-import Footer from "../components/Footer.astro";
 import Contact from "../components/Contact.astro";
 import Default from "../layout/default.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
 ---
 
 <Default pageTitle="À propos">
+  <Breadcrumbs
+    items={[{ href: "/", label: "Accueil" }]}
+    current="À propos de moi"
+  />
   <div class="hero">
     <div class="title">
       <h1>Ce qu'il faut savoir sur moi</h1>

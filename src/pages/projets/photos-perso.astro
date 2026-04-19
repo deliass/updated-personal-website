@@ -1,161 +1,161 @@
 ---
-import Nav from "../../components/Nav.astro"
-import Footer from "../../components/Footer.astro"
-import Breadcrumbs from "../../components/Breadcrumbs.astro"
-import Head from "../../components/Head.astro"
+import Nav from "../../components/Nav.astro";
+import Footer from "../../components/Footer.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import Head from "../../components/Head.astro";
 ---
 
 <html lang="fr">
-	<Head />
-	<body>
-		<Nav />
-		<main>
-			<Breadcrumbs
-				items={[
-					{ href: "/", label: "Accueil" },
-					{ href: "/projets", label: "Mes projets" },
-				]}
-				current="Photos perso"
-			/>
-			<header>
-				<h1 class="project-title">Photos urbaines</h1>
-				<div class="hero">
-					<img
-						src="/assets/images/projects/photos-perso/st-jacques.jpg"
-						alt=""
-					/>
-				</div>
-			</header>
-			<section class="def">
-				<div class="def__inner">
-					<p>Photos prises avec mon Canon EOS 500 Digital.</p>
-				</div>
-			</section>
-			<section class="contexte">
-				<h2 class="project-heading">Contexte</h2>
-				<p>
-					J'aime bien faire de la photos, j'en fais autant pour mon plaisir
-					personnel, que pour des amis, quand il s'agit de leurs projets pro.
-				</p>
-			</section>
-			<section class="productions">
-				<h2 class="project-heading">Productions</h2>
-				<p>Voici les photos que j'ai prises :</p>
-				<div class="photos">
-					<img src="/assets/images/projects/photos-perso/perpi1.jpg" alt="" />
-					<img src="/assets/images/projects/photos-perso/perpi2.jpg" alt="" />
-					<img src="/assets/images/projects/photos-perso/perpi3.jpg" alt="" />
-					<img src="/assets/images/projects/photos-perso/perpi4.jpg" alt="" />
-					<img src="/assets/images/projects/photos-perso/maxime.jpg" alt="" />
-					<img src="/assets/images/projects/photos-perso/mns2.jpg" alt="" />
-					<img
-						src="/assets/images/projects/photos-perso/toulouse1.jpg"
-						alt=""
-					/>
-					<img
-						src="/assets/images/projects/photos-perso/toulouse2.jpg"
-						alt=""
-					/>
-					<img src="/assets/images/projects/photos-perso/mns1.jpg" alt="" />
-				</div>
-			</section>
-		</main>
-	</body><Footer />
+  <Head />
+  <body>
+    <Nav />
+    <main>
+      <Breadcrumbs
+        items={[
+          { href: "/", label: "Accueil" },
+          { href: "/projets", label: "Mes projets" },
+        ]}
+        current="Photos perso"
+      />
+      <header>
+        <h1 class="project-title">Photos urbaines</h1>
+        <div class="hero">
+          <img
+            src="/assets/images/projects/photos-perso/st-jacques.JPG"
+            alt=""
+          />
+        </div>
+      </header>
+      <section class="def">
+        <div class="def__inner">
+          <p>Photos prises avec mon Canon EOS 500 Digital.</p>
+        </div>
+      </section>
+      <section class="contexte">
+        <h2 class="project-heading">Contexte</h2>
+        <p>
+          J'aime bien faire de la photos, j'en fais autant pour mon plaisir
+          personnel, que pour des amis, quand il s'agit de leurs projets pro.
+        </p>
+      </section>
+      <section class="productions">
+        <h2 class="project-heading">Productions</h2>
+        <p>Voici les photos que j'ai prises :</p>
+        <div class="photos">
+          <img src="/assets/images/projects/photos-perso/perpi1.png" alt="" />
+          <img src="/assets/images/projects/photos-perso/perpi2.png" alt="" />
+          <img src="/assets/images/projects/photos-perso/perpi3.png" alt="" />
+          <img src="/assets/images/projects/photos-perso/perpi4.png" alt="" />
+          <img src="/assets/images/projects/photos-perso/maxime.png" alt="" />
+          <img src="/assets/images/projects/photos-perso/mns2.png" alt="" />
+          <img
+            src="/assets/images/projects/photos-perso/toulouse1.png"
+            alt=""
+          />
+          <img
+            src="/assets/images/projects/photos-perso/toulouse2.png"
+            alt=""
+          />
+          <img src="/assets/images/projects/photos-perso/mns1.png" alt="" />
+        </div>
+      </section>
+    </main>
+  </body><Footer />
 </html>
 
 <style>
-	main {
-		display: flex;
-		flex-direction: column;
-		max-width: 1200px;
-		gap: var(--space-2xl);
-		box-sizing: border-box;
-		margin-top: 150px;
-	}
+  main {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    gap: var(--space-2xl);
+    box-sizing: border-box;
+    margin-top: 150px;
+  }
 
-	body {
-		background: var(--primary);
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		justify-content: center;
-		gap: var(--space-xl);
-	}
+  body {
+    background: var(--primary);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    gap: var(--space-xl);
+  }
 
-	section {
-		padding: 0 var(--space-s-m);
-	}
+  section {
+    padding: 0 var(--space-s-m);
+  }
 
-	header {
-		display: flex;
-		width: 100%;
-		padding: 0 var(--space-s-m);
-		flex-direction: column;
-		gap: var(--space-s);
-	}
+  header {
+    display: flex;
+    width: 100%;
+    padding: 0 var(--space-s-m);
+    flex-direction: column;
+    gap: var(--space-s);
+  }
 
-	p {
-		color: var(--text-primary);
-		font-family: "Fibra One";
-		font-size: 20px;
-		margin-top: 0px;
-		margin-bottom: 0px;
-	}
+  p {
+    color: var(--text-primary);
+    font-family: "Fibra One";
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 
-	a {
-		color: var(--text-primary);
-		font-family: "Fibra One";
-		font-size: 20px;
-		margin-top: 0px;
-		margin-bottom: 0px;
-	}
+  a {
+    color: var(--text-primary);
+    font-family: "Fibra One";
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 
-	.hero {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		gap: 20px;
-	}
+  .hero {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
 
-	.photos {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		width: 100%;
-		align-self: center;
-		gap: 20px;
-	}
+  .photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    align-self: center;
+    gap: 20px;
+  }
 
-	.photos img {
-		width: 100%;
-	}
+  .photos img {
+    width: 100%;
+  }
 
-	.contexte,
-	.productions {
-		display: flex;
-		flex-direction: column;
-		gap: 30px;
-	}
+  .contexte,
+  .productions {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
 
-	.def {
-		width: 100%;
-		background: var(--secondary);
-	}
+  .def {
+    width: 100%;
+    background: var(--secondary);
+  }
 
-	.def__inner {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		gap: 20px;
-		padding: var(--space-s-m);
-	}
+  .def__inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    padding: var(--space-s-m);
+  }
 
-	@media (max-width: 480px) {
-		main {
-			margin-top: 0;
-		}
+  @media (max-width: 480px) {
+    main {
+      margin-top: 0;
+    }
 
-		.photos {
-			grid-template-columns: 1fr;
-		}
-	}
+    .photos {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>
