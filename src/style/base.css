@@ -88,6 +88,12 @@
     padding: 0 var(--space-s-m);
   }
 
+	.title {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+
 	  @media screen and (max-width: 480px) {
     * img {
       display: none;

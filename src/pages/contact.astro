@@ -1,6 +1,4 @@
 ---
-import Nav from "../components/Nav.astro";
-import Footer from "../components/Footer.astro";
 import CV from "../components/CV.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import Default from "../layout/default.astro";
@@ -9,8 +7,10 @@ import Default from "../layout/default.astro";
 <Default pageTitle="Contact">
   <Breadcrumbs items={[{ href: "/", label: "Accueil" }]} current="Contact" />
   <div class="hero">
-    <h1>Me contacter</h1>
-    <img src="/assets/icons/contact-h.svg" alt="" />
+    <div class="title">
+      <h1>Me contacter</h1>
+      <img src="/assets/icons/contact-h.svg" alt="" />
+    </div>
     <p>N'hésitez pas à me contacter si mon profil vous a plu !</p>
   </div>
   <section class="contact__info">

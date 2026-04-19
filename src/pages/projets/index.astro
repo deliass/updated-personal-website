@@ -14,7 +14,7 @@ const posts = await getCollection("projects");
     items={[{ href: "/", label: "Accueil" }]}
     current="Mes projets"
   />
-  <section class="intro">
+  <div class="hero">
     <div class="title">
       <h1>Mes projets</h1>
       <img src="/assets/icons/project-h.svg" alt="" />
@@ -25,7 +25,7 @@ const posts = await getCollection("projects");
         et scolaires.
       </p>
     </div>
-  </section>
+  </div>
   <section class="projects">
     <div class="categories">
       <div class="category-filter">
@@ -108,30 +108,6 @@ const posts = await getCollection("projects");
 </script>
 
 <style>
-  .intro {
-    display: flex;
-    max-width: 1200px;
-    padding: var(--space-s-m) 0;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: var(--space-s);
-  }
-
-  .intro p {
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  li {
-    color: var(--text-primary);
-    font-family: "Fibra One";
-    font-size: var(--step-0);
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-
   .categories ul {
     display: flex;
     flex-direction: column;
@@ -192,14 +168,6 @@ const posts = await getCollection("projects");
   }
 
   @media (max-width: 480px) {
-    * img {
-      display: none;
-    }
-
-    main {
-      margin-top: 0;
-    }
-
     .projects {
       display: flex;
       flex-direction: column;
