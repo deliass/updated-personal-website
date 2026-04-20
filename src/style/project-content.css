@@ -27,7 +27,8 @@ section {
 
 .project-intro p {
 	background-color: var(--secondary);
-	padding: var(--space-m)
+	padding: var(--space-m);
+	width: 100%;
 }
 
 li, a {
