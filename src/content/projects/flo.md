@@ -4,7 +4,7 @@ slug: "design-d-etiquettes"
 type: Personnel
 category: Design
 filterType: design
-image: /assets/images/thumbnails/chutney.webp
+image: /src/images/thumbnails/chutney.webp
 description: "Ma tante est cheffe privée, depuis petite, je l'aide à faire ses chutneys, en été, pour vendre à des restaurants proches de là où je viens (66). Avec les années, je ne peux plus être avec elle, mais elle compte désormais sur moi pour réaliser les étiquettes de ses pots !"
 externalLink: https://flomercier.com/
 externalText: Le site de ma tante
@@ -18,8 +18,10 @@ Ici, j'ai utilisé Illustrator pour créer les étiquettes. Sur la partie DA, ma
 ## Les étiquettes
 
 <div class="productions__inner">
-	<img src="/assets/images/projects/flow/1.jpg" alt="" width="200" />
-	<img src="/assets/images/projects/flow/2.jpg" alt="" width="200" />
-	<img src="/assets/images/projects/flow/3.jpg" alt="" width="200" />
-	<img src="/assets/images/projects/flow/4.jpg" alt="" width="200" />
+
+![Étiquette 1](/src/images/projects/flow/1.jpg)
+![Étiquette 2](/src/images/projects/flow/2.jpg)
+![Étiquette 3](/src/images/projects/flow/3.jpg)
+![Étiquette 4](/src/images/projects/flow/4.jpg)
+
 </div>

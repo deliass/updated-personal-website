@@ -4,7 +4,7 @@ slug: "lunetterie-perignon"
 type: Scolaire
 category: Vidéo
 filterType: video
-image: /assets/images/thumbnails/optique.png
+image: /src/images/thumbnails/optique.png
 description: "Lunetterie Pérignon : Marion et Jean-Philippe ont créé leur boutique il y a quelques années et ont fait appel aux étudiants de mon école pour plusieurs sujets, dont la création de contenus pour leurs réseaux sociaux"
 year: "2025"
 ---

@@ -40,18 +40,24 @@ li, a {
 	width: 50%;
 }
 
-.productions__inner {
+.productions__inner p {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	gap: var(--space-s);
+	gap: var(--space-l);
 	justify-content: center;
 }
 
-.photos {
+.photos p {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	gap: var(--space-s);
+	gap: var(--space-xs);
+	max-width: fit-content;
+	align-self: center;
+}
+
+.photos img {
+	width: 70%;
 }
 
 .photos-bottom {
@@ -62,7 +68,7 @@ li, a {
 	gap: 10px;
 }
 
-.photos-bottom img {
+img {
 	width: 35%;
 	height: fit-content;
 }

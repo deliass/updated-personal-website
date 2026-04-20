@@ -4,7 +4,7 @@ slug: "la-conciergerie-administrative"
 type: Professionnel
 category: Communication
 filterType: communication
-image: /assets/images/projects/lca/lca.svg
+image: /src/images/projects/lca/lca.svg
 description: "La Conciergerie Administrative : C'est l'entreprise pour laquelle je travaille en alternance. Charlotte propose ses services d'audit d'entreprises pour alléger et améliorer la santé financière et légale de ses clients."
 externalLink: https://www.laconciergerieadministrative.com/
 externalText: Voir son site

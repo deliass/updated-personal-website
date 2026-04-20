@@ -1,6 +1,6 @@
 @font-face {
   font-family: "ABC Favorit Mono Edu";
-  src: url("/assets/fonts/ABCFavoritMono-Bold.woff2") format("woff2");
+  src: url("/src/fonts/ABCFavoritMono-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Fibra One";
-  src: url("/assets/fonts/FibraOne-Regular.woff2") format("woff2");
+  src: url("/src/fonts/FibraOne-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -16,25 +16,18 @@
 
 @font-face {
   font-family: "Fibra One";
-  src: url("/assets/fonts/FibraOne-Bold.woff2") format("woff2");
+  src: url("/src/fonts/FibraOne-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "monotalic";
-  src:
-    url("https://use.typekit.net/af/1cb92c/00000000000000007735b6e7/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
-      format("woff2"),
-    url("https://use.typekit.net/af/1cb92c/00000000000000007735b6e7/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
-      format("woff"),
-    url("https://use.typekit.net/af/1cb92c/00000000000000007735b6e7/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
-      format("opentype");
-  font-display: auto;
-  font-style: normal;
-  font-weight: 700;
-  font-stretch: normal;
+	font-family: "monotalic";
+	src: url(/public/src/fonts/monotalic.woff2) format("woff2");
+	font-style: normal;
+	font-weight: bold;
+	font-display: swap;
 }
 
 @font-face {
@@ -43,7 +36,6 @@
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  size-adjust: 98%;
 }
 
 .project-title {

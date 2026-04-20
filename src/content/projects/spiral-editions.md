@@ -4,7 +4,7 @@ slug: "ux-spiral-editions"
 type: Scolaire
 category: UX
 filterType: ux
-image: /assets/images/thumbnails/spiral-ux.png
+image: /src/images/thumbnails/spiral-ux.png
 description: "Spiral Éditions : Une jeune société d’édition française basée dans le Sud de la France, à Muret, à quelques kilomètres de Toulouse. Elle est née en 2021 sous l’impulsion de quatre amis qui se sont connus grâce à l’univers du jeu. Il y a Mathias, Théo, Guillaume et Yannick. Tous impliqués dans le milieu du jeu de société, à des degrés divers, ils ont décidé de faire découvrir à leur tour au public les jeux qu’ils aiment. Chez Spiral Éditions, l’objectif est avant tout d’éditer des jeux qui vont s’inscrire dans le temps. Des jeux auxquels vous aurez, encore et toujours envie de rejouer !"
 externalLink: https://blackrockgames.fr/pages/FAR00097/
 externalText: Les découvrir
