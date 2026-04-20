@@ -21,18 +21,18 @@ J’ai eu l’occasion de tester la photographie de manière plus engagée, déf
 
 Voici les photos que j'ai prises et retouchées :
 
-<img
-	src="/assets/images/projects/lbav/1.jpg"
-	alt=""
-	class="photo-bottom"/>
-<img
-	src="/assets/images/projects/lbav/2.jpg"
-	alt=""
-	class="photo-bottom" />
+<div class="photos-bottom">
+	<img
+		src="/assets/images/projects/lbav/1.jpg"
+		alt=""/>
+	<img
+		src="/assets/images/projects/lbav/2.jpg"
+		alt=""/>
+</div>
 
 Je vous invite aussi à consulter la présentation finale, pour découvrir notre argumentation :
 
-<div
+<div class="canva"
 		style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;border-radius: 8px; will-change: transform;"
 	>
 	<iframe

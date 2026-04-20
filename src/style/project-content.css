@@ -54,7 +54,25 @@ li, a {
 	gap: var(--space-s);
 }
 
+.photos-bottom {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+
+.photos-bottom img {
+	width: 35%;
+	height: fit-content;
+}
+
 @media screen and (max-width: 480px) {
+	img {
+		display: flex;
+		flex-direction: column;
+	}
+
 	.project-page {
 		margin: var(--space-s);
 	}
