@@ -4,7 +4,7 @@ slug: "photos-perso"
 type: Perso
 category: Photo
 filterType: photo
-image: ../../images/projects/photos-perso/st-jacques.JPG
+image: /assets/projects/photos-perso/st-jacques.JPG
 description: "Photos prises avec mon Canon EOS 500 Digital."
 year: "2023-2026"
 ---
@@ -20,14 +20,14 @@ Voici les photos que j'ai prises :
 
 <div class="photos">
 
-![Photo dans Perpignan](../assets/projects/photos-perso/perpi1.png)
-![Photo dans Perpignan](../../images/projects/photos-perso/perpi2.png)
-![Photo dans Perpignan](../../images/projects/photos-perso/perpi3.png)
-![Photo de fleurs à Perpignan](../../images/projects/photos-perso/perpi4.png)
-![Photo de Maxime](../../images/projects/photos-perso/maxime.png)
-![Photo pour Make No Sense](../../images/projects/photos-perso/mns2.png)
-![Photo dans Toulouse](../../images/projects/photos-perso/toulouse1.png)
-![Photo dans Toulouse](../../images/projects/photos-perso/toulouse2.png)
-![Photo pour Make No Sense](../../images/projects/photos-perso/mns1.png)
+<img src="/assets/projects/photos-perso/perpi1.png" alt="Photo dans Perpignan" />
+<img src="/assets/projects/photos-perso/perpi2.png" alt="Photo dans Perpignan" />
+<img src="/assets/projects/photos-perso/perpi3.png" alt="Photo dans Perpignan" />
+<img src="/assets/projects/photos-perso/perpi4.png" alt="Photo de fleurs à Perpignan" />
+<img src="/assets/projects/photos-perso/maxime.png" alt="Photo de Maxime" />
+<img src="/assets/projects/photos-perso/mns2.png" alt="Photo pour Make No Sense" />
+<img src="/assets/projects/photos-perso/toulouse1.png" alt="Photo dans Toulouse" />
+<img src="/assets/projects/photos-perso/toulouse2.png" alt="Photo dans Toulouse" />
+<img src="/assets/projects/photos-perso/mns1.png" alt="Photo pour Make No Sense" />
 
 </div>

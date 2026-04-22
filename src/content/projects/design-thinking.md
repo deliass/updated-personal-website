@@ -4,7 +4,7 @@ slug: "design-thinking"
 type: Scolaire
 category: UX
 filterType: ux
-image: /src/images/thumbnails/culture-ux.png
+image: /assets/thumbnails/culture-ux.png
 description: "Mon initiation au Design Thinking, aka ma méthodologie UX favorite ! Cours donné par Mathieu Estivil."
 externalLink: https://www.linkedin.com/in/mathieuestivill/
 externalText: Visiter son LinkedIn

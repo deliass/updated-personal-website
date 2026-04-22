@@ -4,7 +4,7 @@ slug: "video-patagonia"
 type: Scolaire
 category: Vidéo
 filterType: video
-image: /src/images/projects/patagonia/patagonia.png
+image: /assets/projects/patagonia/patagonia.png
 description: "Projet fictif réalisé dans le cadre de mes études, pour la marque Patagonia."
 year: "2026"
 ---

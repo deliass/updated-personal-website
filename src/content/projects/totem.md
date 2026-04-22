@@ -4,7 +4,7 @@ slug: "design-totem"
 type: Scolaire
 category: Design
 filterType: design
-image: /src/images/thumbnails/totem.webp
+image: /assets/thumbnails/totem.webp
 description: "Totem : Totem est une marque de kefir de fruits, une boisson fermentée, pétillante et rafraîchissante. C’est un projet de design graphique que j’ai réalisé dans le cadre de mes études à l’ESD."
 externalLink: https://boutique.letotem.net/
 externalText: Voir le site de la marque

@@ -4,7 +4,7 @@ slug: "mister-freeze"
 type: Professionnel
 category: Webdesign
 filterType: webdesign
-image: /src/images/thumbnails/mister-freeze.png
+image: /assets/thumbnails/mister-freeze.png
 description: "Mister Freeze : L’association Mister Freeze réunit un collectif d’artistes (peintres, graffeurs, photographes, graphistes, webdesigners, réalisateurs...) dont les envies respectives convergent vers une diffusion de l’art au plus grand nombre sur un maximum de supports. Profondément passionnés et impliqués, les membres de l’association multiplient les interventions artistiques auprès du grand public (expositions, ateliers, conférences, performances, fresques murales) pour mieux former les jeunes talents, initier petits et grands et plus largement, rendre l’art accessible à toutes et à tous."
 externalLink: https://www.instagram.com/expomisterfreeze/
 externalText: Visiter leur Instagram

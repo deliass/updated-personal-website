@@ -4,7 +4,7 @@ slug: "digital-event-2026"
 type: Scolaire
 category: Photo
 filterType: photo
-image: /src/images/projects/digital-event/digital-event.png
+image: /assets/projects/digital-event/digital-event.png
 description: "Digital Event : Événement phare de l’ESD, ce projet de 2 semaines réunit chaque année les étudiants de l’école répartis dans différents ateliers pour imaginer et concevoir des dispositifs interactifs."
 externalLink: "https://ecole-du-digital.com/lecole/le-digital-event/"
 externalText: "En lire plus sur le site de mon école"
@@ -38,6 +38,6 @@ notre atelier, à l’école.
 
 ## J'apparais aussi ici…
 
-![Photo prise par Noha](/src/images/projects/digital-event/photo-noa.png)
+<img src="/assets/projects/digital-event/photo-noa.png" alt="Photo prise par Noha" />
 
 Inspirée de Pearl et Maxxxine, photo prise par @noharrttt\_ .

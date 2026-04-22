@@ -4,7 +4,7 @@ slug: "projet-photo-2023"
 type: Scolaire
 category: Photo
 filterType: photo
-image: /src/images/thumbnails/lbav.png
+image: /assets/thumbnails/lbav.png
 description: "Les Belles Années Vintage: Boutique atelier vintage et toulousaine. Désormais fermée, Sonia avait créée cette friperie vintage au cœur des Carmes. Là-bas on pouvait assister à divers ateliers créatifs et de coutures, afin de confectionner ou réparer ses propores pièces."
 year: "2023"
 ---
@@ -23,8 +23,8 @@ Voici les photos que j'ai prises et retouchées :
 
 <div class="productions__inner">
 
-![Photo de la mannequin devant des escalators](../../images/projects/lbav/1.jpg)
-![Photo de la mannequin dans des escalators](../../images/projects/lbav/2.jpg)
+<img src="/assets/projects/lbav/1.jpg" alt="Photo de la mannequin devant des escalators" />
+<img src="/assets/projects/lbav/2.jpg" alt="Photo de la mannequin dans des escalators" />
 
 </div>
 
