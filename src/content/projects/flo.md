@@ -19,9 +19,9 @@ Ici, j'ai utilisé Illustrator pour créer les étiquettes. Sur la partie DA, ma
 
 <div class="productions__inner">
 
-<img src="/assets/projects/flow/1.jpg" alt="Étiquette 1" />
-<img src="/assets/projects/flow/2.jpg" alt="Étiquette 2" />
-<img src="/assets/projects/flow/3.jpg" alt="Étiquette 3" />
-<img src="/assets/projects/flow/4.jpg" alt="Étiquette 4" />
+<img src="/assets/projects/flow/1.jpg" alt="Étiquette 1" class="photo"/>
+<img src="/assets/projects/flow/2.jpg" alt="Étiquette 2" class="photo"/>
+<img src="/assets/projects/flow/3.jpg" alt="Étiquette 3" class="photo"/>
+<img src="/assets/projects/flow/4.jpg" alt="Étiquette 4" class="photo"/>
 
 </div>

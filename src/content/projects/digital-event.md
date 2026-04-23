@@ -38,6 +38,6 @@ notre atelier, à l’école.
 
 ## J'apparais aussi ici…
 
-<img src="/assets/projects/digital-event/photo-noa.png" alt="Photo prise par Noha" />
+<img src="/assets/projects/digital-event/photo-noa.png" alt="" class="photo"/>
 
 Inspirée de Pearl et Maxxxine, photo prise par @noharrttt\_ .

@@ -27,7 +27,7 @@ Behance, ou Comsos.so.
 
 ## Les rendus
 
-<img src="/src/images/projects/totem/etiquettes.svg" alt="" />
+<img src="/src/images/projects/totem/etiquettes.svg" alt="" class="photo"/>
 
 Étiquettes colorées et déclinées en noir&blanc pour le client.
 
