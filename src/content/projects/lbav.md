@@ -23,8 +23,8 @@ Voici les photos que j'ai prises et retouchées :
 
 <div class="productions__inner">
 
-<img src="/assets/projects/lbav/1.jpg" alt="Photo de la mannequin devant des escalators" />
-<img src="/assets/projects/lbav/2.jpg" alt="Photo de la mannequin dans des escalators" />
+<img src="/assets/projects/lbav/1.jpg" alt="Photo de la mannequin devant des escalators" class="photo"/>
+<img src="/assets/projects/lbav/2.jpg" alt="Photo de la mannequin dans des escalators" class="photo"/>
 
 </div>
 
