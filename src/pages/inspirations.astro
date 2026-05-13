@@ -1,0 +1,36 @@
+---
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import Default from "../layout/default.astro";
+import { Image } from "astro:assets";
+---
+
+<Default pageTitle="Inspirations">
+  <Breadcrumbs
+    items={[{ href: "/", label: "Accueil" }]}
+    current="Inspirations"
+  />
+  <section class="hero">
+    <div class="title">
+      <h1>Veille et inspirations</h1>
+      <Image src="/assets/icons/inspi-h.svg" alt="" width="402" height="39" />
+    </div>
+    <p>Bienvenue dans ma tête, aussi appelée ma banque à inspi.</p>
+  </section>
+  <div class="inspi__inner">
+    <div class="speakers">
+      <h3>Personnalités & Speakers</h3>
+      <p>
+        Professionnels, amateurs ou artistes, j’aime ouvrir ma veille à tous les
+        horizons pour en apprendre toujours, même à petite échelle.
+      </p>
+    </div>
+    <div class="design">
+      <h3>Typographies & Design</h3>
+      <p>
+        J’aime les belles choses, mais surtout les belles choses qui font du
+        sens. Je suis très sensible au travail de la typographie, et à la
+        manière dont elle peut faire passer un message.
+      </p>
+    </div>
+  </div>
+</Default>
